@@ -1,0 +1,11 @@
+{
+  "device_id": "DOOR-001",
+  "device_state": "LOCKOUT",
+  "last_event": "FAILED (HIGH)",
+  "last_updated": "2026-09-02T20:33:05+05:30",
+  "wifi_status": "CONNECTED",
+  "ip_address": "192.168.1.105",
+  "rssi": -58,
+  "firmware_version": "1.0.0",
+  "uptime": 1240
+}

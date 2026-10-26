@@ -1,0 +1,4159 @@
+[
+  {
+    "result": "SUCCESS",
+    "attempted_password": "1234",
+    "user": "DAD",
+    "ml_risk_level": "LOW",
+    "agent_risk_level": "LOW",
+    "escalation_applied": false,
+    "escalation_reason": "",
+    "security_profile": {
+      "name": "LOW",
+      "kem": "ML-KEM-512",
+      "signature": "ML-DSA-44"
+    },
+    "action": {
+      "action": "OPEN_DOOR",
+      "message": "Authorized authentication accepted. Door opened."
+    },
+    "reason": "Authorized local keyboard authentication.",
+    "event_id": "95e254f3f1be82bd",
+    "timestamp": "2026-08-18T20:06:22+05:30"
+  },
+  {
+    "result": "SUCCESS",
+    "attempted_password": "5678",
+    "user": "MOM",
+    "ml_risk_level": "LOW",
+    "agent_risk_level": "LOW",
+    "escalation_applied": false,
+    "escalation_reason": "",
+    "security_profile": {
+      "name": "LOW",
+      "kem": "ML-KEM-512",
+      "signature": "ML-DSA-44"
+    },
+    "action": {
+      "action": "OPEN_DOOR",
+      "message": "Authorized authentication accepted. Door opened."
+    },
+    "reason": "Authorized local keyboard authentication.",
+    "event_id": "832270d09b600bc9",
+    "timestamp": "2026-08-18T20:06:59+05:30"
+  },
+  {
+    "result": "FAILED",
+    "attempted_password": "9999",
+    "user": "UNKNOWN",
+    "failed_attempt_number": 1,
+    "ml_risk_level": "LOW",
+    "ml_risk_confidence": {
+      "HIGH": 0.0,
+      "LOW": 0.9927,
+      "MEDIUM": 0.0073
+    },
+    "agent_risk_level": "LOW",
+    "escalation_applied": false,
+    "escalation_reason": "No additional escalation was required. The agent accepted the ML assessment.",
+    "security_profile": {
+      "name": "LOW",
+      "kem": "ML-KEM-512",
+      "signature": "ML-DSA-44",
+      "description": "Resource-conscious quantum-resistant policy for normal door-lock operation."
+    },
+    "action": {
+      "action": "RECORD_FAILED_ATTEMPT",
+      "message": "Failed authentication recorded.",
+      "execution_status": "COMMAND_READY_FOR_DOOR_CONTROLLER"
+    },
+    "observations": [
+      "No major abnormal condition observed."
+    ],
+    "reasoning": [
+      "Random Forest initially assessed the environment as LOW risk.",
+      "ML risk = LOW; HIGH confidence = 0.00%; MEDIUM confidence = 0.73%.",
+      "Critical security indicators detected: 0.",
+      "No additional escalation was required. The agent accepted the ML assessment."
+    ],
+    "context": {
+      "battery_level": 85,
+      "cpu_utilization": 35,
+      "memory_usage": 40,
+      "failed_auth_attempts": 1,
+      "successful_auth_attempts": 0,
+      "communication_latency_ms": 40,
+      "network_anomaly": 0,
+      "threat_indicator": 0
+    },
+    "event_id": "16915c4741719d7f",
+    "timestamp": "2026-08-18T20:07:19+05:30"
+  },
+  {
+    "result": "FAILED",
+    "attempted_password": "8888",
+    "user": "UNKNOWN",
+    "failed_attempt_number": 2,
+    "ml_risk_level": "LOW",
+    "ml_risk_confidence": {
+      "HIGH": 0.0,
+      "LOW": 0.9734,
+      "MEDIUM": 0.0266
+    },
+    "agent_risk_level": "LOW",
+    "escalation_applied": false,
+    "escalation_reason": "No additional escalation was required. The agent accepted the ML assessment.",
+    "security_profile": {
+      "name": "LOW",
+      "kem": "ML-KEM-512",
+      "signature": "ML-DSA-44",
+      "description": "Resource-conscious quantum-resistant policy for normal door-lock operation."
+    },
+    "action": {
+      "action": "RECORD_FAILED_ATTEMPT",
+      "message": "Failed authentication recorded.",
+      "execution_status": "COMMAND_READY_FOR_DOOR_CONTROLLER"
+    },
+    "observations": [
+      "No major abnormal condition observed."
+    ],
+    "reasoning": [
+      "Random Forest initially assessed the environment as LOW risk.",
+      "ML risk = LOW; HIGH confidence = 0.00%; MEDIUM confidence = 2.66%.",
+      "Critical security indicators detected: 0.",
+      "No additional escalation was required. The agent accepted the ML assessment."
+    ],
+    "context": {
+      "battery_level": 85,
+      "cpu_utilization": 35,
+      "memory_usage": 40,
+      "failed_auth_attempts": 2,
+      "successful_auth_attempts": 0,
+      "communication_latency_ms": 40,
+      "network_anomaly": 0,
+      "threat_indicator": 0
+    },
+    "event_id": "aaf8e454dee4df3f",
+    "timestamp": "2026-08-18T20:07:49+05:30"
+  },
+  {
+    "result": "FAILED",
+    "attempted_password": "1111",
+    "user": "UNKNOWN",
+    "failed_attempt_number": 3,
+    "ml_risk_level": "MEDIUM",
+    "ml_risk_confidence": {
+      "HIGH": 0.0011,
+      "LOW": 0.1595,
+      "MEDIUM": 0.8394
+    },
+    "agent_risk_level": "MEDIUM",
+    "escalation_applied": false,
+    "escalation_reason": "No additional escalation was required. The agent accepted the ML assessment.",
+    "security_profile": {
+      "name": "STANDARD",
+      "kem": "ML-KEM-768",
+      "signature": "ML-DSA-65",
+      "description": "Balanced quantum-resistant policy for suspicious conditions."
+    },
+    "action": {
+      "action": "INCREASE_MONITORING",
+      "message": "Increase monitoring and security logging.",
+      "execution_status": "COMMAND_READY_FOR_DOOR_CONTROLLER"
+    },
+    "observations": [
+      "Repeated authentication failures detected.",
+      "Network anomaly detected.",
+      "Elevated communication latency observed."
+    ],
+    "reasoning": [
+      "Random Forest initially assessed the environment as MEDIUM risk.",
+      "ML risk = MEDIUM; HIGH confidence = 0.11%; MEDIUM confidence = 83.94%.",
+      "Critical security indicators detected: 1.",
+      "No additional escalation was required. The agent accepted the ML assessment."
+    ],
+    "context": {
+      "battery_level": 85,
+      "cpu_utilization": 65,
+      "memory_usage": 65,
+      "failed_auth_attempts": 3,
+      "successful_auth_attempts": 0,
+      "communication_latency_ms": 180,
+      "network_anomaly": 1,
+      "threat_indicator": 0
+    },
+    "event_id": "04ba0df619bacab1",
+    "timestamp": "2026-08-18T20:08:06+05:30"
+  },
+  {
+    "result": "FAILED",
+    "attempted_password": "3452",
+    "user": "UNKNOWN",
+    "failed_attempt_number": 4,
+    "ml_risk_level": "MEDIUM",
+    "ml_risk_confidence": {
+      "HIGH": 0.002,
+      "LOW": 0.1247,
+      "MEDIUM": 0.8732
+    },
+    "agent_risk_level": "MEDIUM",
+    "escalation_applied": false,
+    "escalation_reason": "No additional escalation was required. The agent accepted the ML assessment.",
+    "security_profile": {
+      "name": "STANDARD",
+      "kem": "ML-KEM-768",
+      "signature": "ML-DSA-65",
+      "description": "Balanced quantum-resistant policy for suspicious conditions."
+    },
+    "action": {
+      "action": "INCREASE_MONITORING",
+      "message": "Increase monitoring and security logging.",
+      "execution_status": "COMMAND_READY_FOR_DOOR_CONTROLLER"
+    },
+    "observations": [
+      "Repeated authentication failures detected.",
+      "Network anomaly detected.",
+      "Elevated communication latency observed."
+    ],
+    "reasoning": [
+      "Random Forest initially assessed the environment as MEDIUM risk.",
+      "ML risk = MEDIUM; HIGH confidence = 0.20%; MEDIUM confidence = 87.32%.",
+      "Critical security indicators detected: 1.",
+      "No additional escalation was required. The agent accepted the ML assessment."
+    ],
+    "context": {
+      "battery_level": 85,
+      "cpu_utilization": 65,
+      "memory_usage": 65,
+      "failed_auth_attempts": 4,
+      "successful_auth_attempts": 0,
+      "communication_latency_ms": 180,
+      "network_anomaly": 1,
+      "threat_indicator": 0
+    },
+    "event_id": "50b4069376dac431",
+    "timestamp": "2026-08-18T20:08:27+05:30"
+  },
+  {
+    "result": "FAILED",
+    "attempted_password": "7777",
+    "user": "UNKNOWN",
+    "failed_attempt_number": 5,
+    "ml_risk_level": "HIGH",
+    "ml_risk_confidence": {
+      "HIGH": 0.8403,
+      "LOW": 0.0,
+      "MEDIUM": 0.1597
+    },
+    "agent_risk_level": "HIGH",
+    "escalation_applied": false,
+    "escalation_reason": "No additional escalation was required. The agent accepted the ML assessment.",
+    "security_profile": {
+      "name": "HIGH",
+      "kem": "ML-KEM-1024",
+      "signature": "ML-DSA-87",
+      "description": "Stronger quantum-resistant policy for active attack conditions."
+    },
+    "action": {
+      "action": "LOCK_AUTHENTICATION",
+      "message": "Authentication temporarily locked.",
+      "execution_status": "COMMAND_READY_FOR_DOOR_CONTROLLER"
+    },
+    "observations": [
+      "Repeated authentication failures detected.",
+      "Network anomaly detected.",
+      "Threat indicator is active.",
+      "Elevated communication latency observed.",
+      "High CPU utilization observed.",
+      "High memory utilization observed."
+    ],
+    "reasoning": [
+      "Random Forest initially assessed the environment as HIGH risk.",
+      "ML risk = HIGH; HIGH confidence = 84.03%; MEDIUM confidence = 15.97%.",
+      "Critical security indicators detected: 6.",
+      "No additional escalation was required. The agent accepted the ML assessment."
+    ],
+    "context": {
+      "battery_level": 85,
+      "cpu_utilization": 90,
+      "memory_usage": 87,
+      "failed_auth_attempts": 5,
+      "successful_auth_attempts": 0,
+      "communication_latency_ms": 320,
+      "network_anomaly": 1,
+      "threat_indicator": 1
+    },
+    "event_id": "badd24fd2fbdc8ea",
+    "timestamp": "2026-08-18T20:08:53+05:30"
+  },
+  {
+    "source": "ESP8266_KEYPAD",
+    "device_id": "DOOR-001",
+    "event_id": "TEST-SUCCESS-1788347633",
+    "result": "SUCCESS",
+    "attempted_password": "1234",
+    "pin_attempt_hash": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+    "user": "DAD",
+    "ml_risk_level": "LOW",
+    "agent_risk_level": "LOW",
+    "escalation_applied": false,
+    "escalation_reason": "",
+    "security_profile": {
+      "name": "LOW",
+      "kem": "ML-KEM-512",
+      "signature": "ML-DSA-44",
+      "description": "Resource-conscious quantum-resistant policy for normal door-lock operation."
+    },
+    "action": {
+      "action": "AUTHENTICATION_SUCCESS",
+      "message": "Authorized user DAD authenticated via hardware keypad.",
+      "execution_status": "DOOR_UNLOCK_COMMAND_ISSUED"
+    },
+    "reason": "Authorized user DAD accepted.",
+    "timestamp": "2026-09-02T16:43:53+05:30"
+  },
+  {
+    "source": "ESP8266_KEYPAD",
+    "device_id": "DOOR-001",
+    "event_id": "TEST-FAIL-1788347633",
+    "result": "FAILED",
+    "attempted_password": "UNKNOWN",
+    "pin_attempt_hash": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+    "user": "UNKNOWN",
+    "failed_attempt_number": 6,
+    "ml_risk_level": "HIGH",
+    "ml_risk_confidence": {
+      "HIGH": 0.8885,
+      "LOW": 0.0,
+      "MEDIUM": 0.1115
+    },
+    "agent_risk_level": "HIGH",
+    "escalation_applied": false,
+    "escalation_reason": "No additional escalation was required. The agent accepted the ML assessment.",
+    "security_profile": {
+      "name": "HIGH",
+      "kem": "ML-KEM-1024",
+      "signature": "ML-DSA-87",
+      "description": "Stronger quantum-resistant policy for active attack conditions."
+    },
+    "action": {
+      "action": "LOCK_AUTHENTICATION",
+      "message": "Authentication locked due to HIGH risk context.",
+      "execution_status": "HARDWARE_COMMAND_QUEUED"
+    },
+    "observations": [
+      "Repeated authentication failures detected.",
+      "Network anomaly detected.",
+      "Threat indicator is active.",
+      "Elevated communication latency observed.",
+      "High CPU utilization observed.",
+      "High memory utilization observed."
+    ],
+    "reasoning": [
+      "Random Forest initially assessed the environment as HIGH risk.",
+      "ML risk = HIGH; HIGH confidence = 88.85%; MEDIUM confidence = 11.15%.",
+      "Critical security indicators detected: 6.",
+      "No additional escalation was required. The agent accepted the ML assessment."
+    ],
+    "context": {
+      "battery_level": 85,
+      "cpu_utilization": 90,
+      "memory_usage": 87,
+      "failed_auth_attempts": 6,
+      "successful_auth_attempts": 0,
+      "communication_latency_ms": 320,
+      "network_anomaly": 1,
+      "threat_indicator": 1
+    },
+    "timestamp": "2026-09-02T16:43:53+05:30"
+  },
+  {
+    "source": "ESP8266_KEYPAD",
+    "device_id": "DOOR-001",
+    "event_id": "TEST-SUCCESS-1788347867707",
+    "result": "SUCCESS",
+    "attempted_password": "1234",
+    "pin_attempt_hash": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+    "user": "DAD",
+    "ml_risk_level": "LOW",
+    "agent_risk_level": "LOW",
+    "escalation_applied": false,
+    "escalation_reason": "",
+    "security_profile": {
+      "name": "LOW",
+      "kem": "ML-KEM-512",
+      "signature": "ML-DSA-44",
+      "description": "Resource-conscious quantum-resistant policy for normal door-lock operation."
+    },
+    "action": {
+      "action": "AUTHENTICATION_SUCCESS",
+      "message": "Authorized user DAD authenticated via hardware keypad.",
+      "execution_status": "DOOR_UNLOCK_COMMAND_ISSUED"
+    },
+    "reason": "Authorized user DAD accepted.",
+    "timestamp": "2026-09-02T16:00:00+05:30"
+  },
+  {
+    "source": "ESP8266_KEYPAD",
+    "device_id": "DOOR-001",
+    "event_id": "TEST-FAIL-1788347867724",
+    "result": "FAILED",
+    "attempted_password": "UNKNOWN",
+    "pin_attempt_hash": "9af15b336e6a9619928537df30b2e6a2376569fcf9d7e773eccede65606529a0",
+    "user": "UNKNOWN",
+    "failed_attempt_number": 7,
+    "ml_risk_level": "HIGH",
+    "ml_risk_confidence": {
+      "HIGH": 0.9323,
+      "LOW": 0.0,
+      "MEDIUM": 0.0677
+    },
+    "agent_risk_level": "HIGH",
+    "escalation_applied": false,
+    "escalation_reason": "No additional escalation was required. The agent accepted the ML assessment.",
+    "security_profile": {
+      "name": "HIGH",
+      "kem": "ML-KEM-1024",
+      "signature": "ML-DSA-87",
+      "description": "Stronger quantum-resistant policy for active attack conditions."
+    },
+    "action": {
+      "action": "LOCK_AUTHENTICATION",
+      "message": "Authentication locked due to HIGH risk context.",
+      "execution_status": "HARDWARE_COMMAND_QUEUED"
+    },
+    "observations": [
+      "Repeated authentication failures detected.",
+      "Network anomaly detected.",
+      "Threat indicator is active.",
+      "Elevated communication latency observed.",
+      "High CPU utilization observed.",
+      "High memory utilization observed."
+    ],
+    "reasoning": [
+      "Random Forest initially assessed the environment as HIGH risk.",
+      "ML risk = HIGH; HIGH confidence = 93.23%; MEDIUM confidence = 6.77%.",
+      "Critical security indicators detected: 6.",
+      "No additional escalation was required. The agent accepted the ML assessment."
+    ],
+    "context": {
+      "battery_level": 85,
+      "cpu_utilization": 90,
+      "memory_usage": 87,
+      "failed_auth_attempts": 7,
+      "successful_auth_attempts": 0,
+      "communication_latency_ms": 320,
+      "network_anomaly": 1,
+      "threat_indicator": 1
+    },
+    "timestamp": "2026-09-02T16:00:00+05:30"
+  },
+  {
+    "source": "ESP8266_KEYPAD",
+    "device_id": "DOOR-001",
+    "event_id": "TEST-DUP-1788347867955",
+    "result": "SUCCESS",
+    "attempted_password": "1234",
+    "pin_attempt_hash": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+    "user": "DAD",
+    "ml_risk_level": "LOW",
+    "agent_risk_level": "LOW",
+    "escalation_applied": false,
+    "escalation_reason": "",
+    "security_profile": {
+      "name": "LOW",
+      "kem": "ML-KEM-512",
+      "signature": "ML-DSA-44",
+      "description": "Resource-conscious quantum-resistant policy for normal door-lock operation."
+    },
+    "action": {
+      "action": "AUTHENTICATION_SUCCESS",
+      "message": "Authorized user DAD authenticated via hardware keypad.",
+      "execution_status": "DOOR_UNLOCK_COMMAND_ISSUED"
+    },
+    "reason": "Authorized user DAD accepted.",
+    "timestamp": "2026-09-02T16:47:47+05:30"
+  },
+  {
+    "source": "ESP8266_KEYPAD",
+    "device_id": "DOOR-001",
+    "event_id": "TEST-SUCCESS-1788347966203",
+    "result": "SUCCESS",
+    "attempted_password": "1234",
+    "pin_attempt_hash": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+    "user": "DAD",
+    "ml_risk_level": "LOW",
+    "agent_risk_level": "LOW",
+    "escalation_applied": false,
+    "escalation_reason": "",
+    "security_profile": {
+      "name": "LOW",
+      "kem": "ML-KEM-512",
+      "signature": "ML-DSA-44",
+      "description": "Resource-conscious quantum-resistant policy for normal door-lock operation."
+    },
+    "action": {
+      "action": "AUTHENTICATION_SUCCESS",
+      "message": "Authorized user DAD authenticated via hardware keypad.",
+      "execution_status": "DOOR_UNLOCK_COMMAND_ISSUED"
+    },
+    "reason": "Authorized user DAD accepted.",
+    "timestamp": "2026-09-02T16:00:00+05:30"
+  },
+  {
+    "source": "ESP8266_KEYPAD",
+    "device_id": "DOOR-001",
+    "event_id": "TEST-FAIL-1788347966218",
+    "result": "FAILED",
+    "attempted_password": "UNKNOWN",
+    "pin_attempt_hash": "9af15b336e6a9619928537df30b2e6a2376569fcf9d7e773eccede65606529a0",
+    "user": "UNKNOWN",
+    "failed_attempt_number": 8,
+    "ml_risk_level": "HIGH",
+    "ml_risk_confidence": {
+      "HIGH": 0.9412,
+      "LOW": 0.0,
+      "MEDIUM": 0.0588
+    },
+    "agent_risk_level": "HIGH",
+    "escalation_applied": false,
+    "escalation_reason": "No additional escalation was required. The agent accepted the ML assessment.",
+    "security_profile": {
+      "name": "HIGH",
+      "kem": "ML-KEM-1024",
+      "signature": "ML-DSA-87",
+      "description": "Stronger quantum-resistant policy for active attack conditions."
+    },
+    "action": {
+      "action": "LOCK_AUTHENTICATION",
+      "message": "Authentication locked due to HIGH risk context.",
+      "execution_status": "HARDWARE_COMMAND_QUEUED"
+    },
+    "observations": [
+      "Repeated authentication failures detected.",
+      "Network anomaly detected.",
+      "Threat indicator is active.",
+      "Elevated communication latency observed.",
+      "High CPU utilization observed.",
+      "High memory utilization observed."
+    ],
+    "reasoning": [
+      "Random Forest initially assessed the environment as HIGH risk.",
+      "ML risk = HIGH; HIGH confidence = 94.12%; MEDIUM confidence = 5.88%.",
+      "Critical security indicators detected: 6.",
+      "No additional escalation was required. The agent accepted the ML assessment."
+    ],
+    "context": {
+      "battery_level": 85,
+      "cpu_utilization": 90,
+      "memory_usage": 87,
+      "failed_auth_attempts": 8,
+      "successful_auth_attempts": 0,
+      "communication_latency_ms": 320,
+      "network_anomaly": 1,
+      "threat_indicator": 1
+    },
+    "timestamp": "2026-09-02T16:00:00+05:30"
+  },
+  {
+    "source": "ESP8266_KEYPAD",
+    "device_id": "DOOR-001",
+    "event_id": "TEST-DUP-1788347966481",
+    "result": "SUCCESS",
+    "attempted_password": "1234",
+    "pin_attempt_hash": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+    "user": "DAD",
+    "ml_risk_level": "LOW",
+    "agent_risk_level": "LOW",
+    "escalation_applied": false,
+    "escalation_reason": "",
+    "security_profile": {
+      "name": "LOW",
+      "kem": "ML-KEM-512",
+      "signature": "ML-DSA-44",
+      "description": "Resource-conscious quantum-resistant policy for normal door-lock operation."
+    },
+    "action": {
+      "action": "AUTHENTICATION_SUCCESS",
+      "message": "Authorized user DAD authenticated via hardware keypad.",
+      "execution_status": "DOOR_UNLOCK_COMMAND_ISSUED"
+    },
+    "reason": "Authorized user DAD accepted.",
+    "timestamp": "2026-09-02T16:49:26+05:30"
+  },
+  {
+    "source": "ESP8266_KEYPAD",
+    "device_id": "DOOR-001",
+    "event_id": "TEST-CLOUD-1788349183",
+    "result": "SUCCESS",
+    "attempted_password": "1234",
+    "pin_attempt_hash": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+    "user": "DAD",
+    "ml_risk_level": "LOW",
+    "agent_risk_level": "LOW",
+    "escalation_applied": false,
+    "escalation_reason": "",
+    "security_profile": {
+      "name": "LOW",
+      "kem": "ML-KEM-512",
+      "signature": "ML-DSA-44",
+      "description": "Resource-conscious quantum-resistant policy for normal door-lock operation."
+    },
+    "action": {
+      "action": "AUTHENTICATION_SUCCESS",
+      "message": "Authorized user DAD authenticated via hardware keypad.",
+      "execution_status": "DOOR_UNLOCK_COMMAND_ISSUED"
+    },
+    "reason": "Authorized user DAD accepted.",
+    "timestamp": "2026-09-02T11:39:35.825Z"
+  },
+  {
+    "source": "WEB_UI",
+    "result": "SUCCESS",
+    "attempted_password": "1234",
+    "user": "DAD",
+    "ml_risk_level": "LOW",
+    "agent_risk_level": "LOW",
+    "escalation_applied": false,
+    "escalation_reason": "",
+    "security_profile": {
+      "name": "LOW",
+      "kem": "ML-KEM-512",
+      "signature": "ML-DSA-44"
+    },
+    "action": {
+      "action": "OPEN_DOOR",
+      "message": "Authorized authentication accepted. Door opened."
+    },
+    "reason": "Authorized local keyboard authentication.",
+    "event_id": "15800b7634a7cce9",
+    "timestamp": "2026-09-02T17:10:45+05:30"
+  },
+  {
+    "source": "WEB_UI",
+    "result": "FAILED",
+    "attempted_password": "9999",
+    "user": "UNKNOWN",
+    "failed_attempt_number": 9,
+    "ml_risk_level": "HIGH",
+    "ml_risk_confidence": {
+      "HIGH": 0.9412,
+      "LOW": 0.0,
+      "MEDIUM": 0.0588
+    },
+    "agent_risk_level": "HIGH",
+    "escalation_applied": false,
+    "escalation_reason": "No additional escalation was required. The agent accepted the ML assessment.",
+    "security_profile": {
+      "name": "HIGH",
+      "kem": "ML-KEM-1024",
+      "signature": "ML-DSA-87",
+      "description": "Stronger quantum-resistant policy for active attack conditions."
+    },
+    "action": {
+      "action": "LOCK_AUTHENTICATION",
+      "message": "Authentication temporarily locked.",
+      "execution_status": "COMMAND_READY_FOR_DOOR_CONTROLLER"
+    },
+    "observations": [
+      "Repeated authentication failures detected.",
+      "Network anomaly detected.",
+      "Threat indicator is active.",
+      "Elevated communication latency observed.",
+      "High CPU utilization observed.",
+      "High memory utilization observed."
+    ],
+    "reasoning": [
+      "Random Forest initially assessed the environment as HIGH risk.",
+      "ML risk = HIGH; HIGH confidence = 94.12%; MEDIUM confidence = 5.88%.",
+      "Critical security indicators detected: 6.",
+      "No additional escalation was required. The agent accepted the ML assessment."
+    ],
+    "context": {
+      "battery_level": 85,
+      "cpu_utilization": 90,
+      "memory_usage": 87,
+      "failed_auth_attempts": 9,
+      "successful_auth_attempts": 0,
+      "communication_latency_ms": 320,
+      "network_anomaly": 1,
+      "threat_indicator": 1
+    },
+    "event_id": "9932e1329de6e577",
+    "timestamp": "2026-09-02T17:10:45+05:30"
+  },
+  {
+    "source": "ESP8266_KEYPAD",
+    "device_id": "DOOR-001",
+    "event_id": "TEST-SUCCESS-1788349284361",
+    "result": "SUCCESS",
+    "attempted_password": "1234",
+    "pin_attempt_hash": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+    "user": "DAD",
+    "ml_risk_level": "LOW",
+    "agent_risk_level": "LOW",
+    "escalation_applied": false,
+    "escalation_reason": "",
+    "security_profile": {
+      "name": "LOW",
+      "kem": "ML-KEM-512",
+      "signature": "ML-DSA-44",
+      "description": "Resource-conscious quantum-resistant policy for normal door-lock operation."
+    },
+    "action": {
+      "action": "AUTHENTICATION_SUCCESS",
+      "message": "Authorized user DAD authenticated via hardware keypad.",
+      "execution_status": "DOOR_UNLOCK_COMMAND_ISSUED"
+    },
+    "reason": "Authorized user DAD accepted.",
+    "timestamp": "2026-09-02T16:00:00+05:30"
+  },
+  {
+    "source": "ESP8266_KEYPAD",
+    "device_id": "DOOR-001",
+    "event_id": "TEST-FAIL-1788349290028",
+    "result": "FAILED",
+    "attempted_password": "UNKNOWN",
+    "pin_attempt_hash": "9af15b336e6a9619928537df30b2e6a2376569fcf9d7e773eccede65606529a0",
+    "user": "UNKNOWN",
+    "failed_attempt_number": 10,
+    "ml_risk_level": "HIGH",
+    "ml_risk_confidence": {
+      "HIGH": 0.9412,
+      "LOW": 0.0,
+      "MEDIUM": 0.0588
+    },
+    "agent_risk_level": "HIGH",
+    "escalation_applied": false,
+    "escalation_reason": "No additional escalation was required. The agent accepted the ML assessment.",
+    "security_profile": {
+      "name": "HIGH",
+      "kem": "ML-KEM-1024",
+      "signature": "ML-DSA-87",
+      "description": "Stronger quantum-resistant policy for active attack conditions."
+    },
+    "action": {
+      "action": "LOCK_AUTHENTICATION",
+      "message": "Authentication locked due to HIGH risk context.",
+      "execution_status": "HARDWARE_COMMAND_QUEUED"
+    },
+    "observations": [
+      "Repeated authentication failures detected.",
+      "Network anomaly detected.",
+      "Threat indicator is active.",
+      "Elevated communication latency observed.",
+      "High CPU utilization observed.",
+      "High memory utilization observed."
+    ],
+    "reasoning": [
+      "Random Forest initially assessed the environment as HIGH risk.",
+      "ML risk = HIGH; HIGH confidence = 94.12%; MEDIUM confidence = 5.88%.",
+      "Critical security indicators detected: 6.",
+      "No additional escalation was required. The agent accepted the ML assessment."
+    ],
+    "context": {
+      "battery_level": 85,
+      "cpu_utilization": 90,
+      "memory_usage": 87,
+      "failed_auth_attempts": 10,
+      "successful_auth_attempts": 0,
+      "communication_latency_ms": 320,
+      "network_anomaly": 1,
+      "threat_indicator": 1
+    },
+    "timestamp": "2026-09-02T16:00:00+05:30"
+  },
+  {
+    "source": "ESP8266_KEYPAD",
+    "device_id": "DOOR-001",
+    "event_id": "TEST-DUP-1788349293240",
+    "result": "SUCCESS",
+    "attempted_password": "1234",
+    "pin_attempt_hash": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+    "user": "DAD",
+    "ml_risk_level": "LOW",
+    "agent_risk_level": "LOW",
+    "escalation_applied": false,
+    "escalation_reason": "",
+    "security_profile": {
+      "name": "LOW",
+      "kem": "ML-KEM-512",
+      "signature": "ML-DSA-44",
+      "description": "Resource-conscious quantum-resistant policy for normal door-lock operation."
+    },
+    "action": {
+      "action": "AUTHENTICATION_SUCCESS",
+      "message": "Authorized user DAD authenticated via hardware keypad.",
+      "execution_status": "DOOR_UNLOCK_COMMAND_ISSUED"
+    },
+    "reason": "Authorized user DAD accepted.",
+    "timestamp": "2026-09-02T17:11:33+05:30"
+  },
+  {
+    "source": "ESP8266_KEYPAD",
+    "device_id": "DOOR-001",
+    "event_id": "TEST-SUCCESS-1788359101257",
+    "result": "SUCCESS",
+    "attempted_password": "1234",
+    "pin_attempt_hash": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+    "user": "DAD",
+    "ml_risk_level": "LOW",
+    "agent_risk_level": "LOW",
+    "escalation_applied": false,
+    "escalation_reason": "",
+    "security_profile": {
+      "name": "LOW",
+      "kem": "ML-KEM-512",
+      "signature": "ML-DSA-44",
+      "description": "Resource-conscious quantum-resistant policy for normal door-lock operation."
+    },
+    "action": {
+      "action": "AUTHENTICATION_SUCCESS",
+      "message": "Authorized user DAD authenticated via hardware keypad.",
+      "execution_status": "DOOR_UNLOCK_COMMAND_ISSUED"
+    },
+    "reason": "Authorized user DAD accepted.",
+    "timestamp": "2026-09-02T16:00:00+05:30"
+  },
+  {
+    "source": "ESP8266_KEYPAD",
+    "device_id": "DOOR-001",
+    "event_id": "TEST-FAIL-1788359105306",
+    "result": "FAILED",
+    "attempted_password": "UNKNOWN",
+    "pin_attempt_hash": "9af15b336e6a9619928537df30b2e6a2376569fcf9d7e773eccede65606529a0",
+    "user": "UNKNOWN",
+    "failed_attempt_number": 11,
+    "ml_risk_level": "HIGH",
+    "ml_risk_confidence": {
+      "HIGH": 0.9423,
+      "LOW": 0.0,
+      "MEDIUM": 0.0577
+    },
+    "agent_risk_level": "HIGH",
+    "escalation_applied": false,
+    "escalation_reason": "No additional escalation was required. The agent accepted the ML assessment.",
+    "security_profile": {
+      "name": "HIGH",
+      "kem": "ML-KEM-1024",
+      "signature": "ML-DSA-87",
+      "description": "Stronger quantum-resistant policy for active attack conditions."
+    },
+    "action": {
+      "action": "LOCK_AUTHENTICATION",
+      "message": "Authentication locked due to HIGH risk context.",
+      "execution_status": "HARDWARE_COMMAND_QUEUED"
+    },
+    "observations": [
+      "Repeated authentication failures detected.",
+      "Network anomaly detected.",
+      "Threat indicator is active.",
+      "Elevated communication latency observed.",
+      "High CPU utilization observed.",
+      "High memory utilization observed."
+    ],
+    "reasoning": [
+      "Random Forest initially assessed the environment as HIGH risk.",
+      "ML risk = HIGH; HIGH confidence = 94.23%; MEDIUM confidence = 5.77%.",
+      "Critical security indicators detected: 6.",
+      "No additional escalation was required. The agent accepted the ML assessment."
+    ],
+    "context": {
+      "battery_level": 85,
+      "cpu_utilization": 90,
+      "memory_usage": 87,
+      "failed_auth_attempts": 11,
+      "successful_auth_attempts": 0,
+      "communication_latency_ms": 320,
+      "network_anomaly": 1,
+      "threat_indicator": 1
+    },
+    "timestamp": "2026-09-02T16:00:00+05:30"
+  },
+  {
+    "source": "ESP8266_KEYPAD",
+    "device_id": "DOOR-001",
+    "event_id": "TEST-DUP-1788359108117",
+    "result": "SUCCESS",
+    "attempted_password": "1234",
+    "pin_attempt_hash": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+    "user": "DAD",
+    "ml_risk_level": "LOW",
+    "agent_risk_level": "LOW",
+    "escalation_applied": false,
+    "escalation_reason": "",
+    "security_profile": {
+      "name": "LOW",
+      "kem": "ML-KEM-512",
+      "signature": "ML-DSA-44",
+      "description": "Resource-conscious quantum-resistant policy for normal door-lock operation."
+    },
+    "action": {
+      "action": "AUTHENTICATION_SUCCESS",
+      "message": "Authorized user DAD authenticated via hardware keypad.",
+      "execution_status": "DOOR_UNLOCK_COMMAND_ISSUED"
+    },
+    "reason": "Authorized user DAD accepted.",
+    "timestamp": "2026-09-02T19:55:08+05:30"
+  },
+  {
+    "source": "ESP8266_KEYPAD",
+    "device_id": "DOOR-001",
+    "event_id": "TEST-MOM-1788359111186",
+    "result": "SUCCESS",
+    "attempted_password": "5678",
+    "pin_attempt_hash": "f8638b979b2f4f793ddb6dbd197e0ee25a7a6ea32b0ae22f5e3c5d119d839e75",
+    "user": "MOM",
+    "ml_risk_level": "LOW",
+    "agent_risk_level": "LOW",
+    "escalation_applied": false,
+    "escalation_reason": "",
+    "security_profile": {
+      "name": "LOW",
+      "kem": "ML-KEM-512",
+      "signature": "ML-DSA-44",
+      "description": "Resource-conscious quantum-resistant policy for normal door-lock operation."
+    },
+    "action": {
+      "action": "AUTHENTICATION_SUCCESS",
+      "message": "Authorized user MOM authenticated via hardware keypad.",
+      "execution_status": "DOOR_UNLOCK_COMMAND_ISSUED"
+    },
+    "reason": "Authorized user MOM accepted.",
+    "timestamp": "2026-09-02T16:00:00+05:30"
+  },
+  {
+    "source": "ESP8266_KEYPAD",
+    "device_id": "DOOR-001",
+    "event_id": "TEST-BRUTE-0-1788359116036",
+    "result": "FAILED",
+    "attempted_password": "UNKNOWN",
+    "pin_attempt_hash": "80ae015febb99836b5143ac90a21f7831d328983aad118bd56aa2d5dbc97c635",
+    "user": "UNKNOWN",
+    "failed_attempt_number": 12,
+    "ml_risk_level": "HIGH",
+    "ml_risk_confidence": {
+      "HIGH": 0.9423,
+      "LOW": 0.0,
+      "MEDIUM": 0.0577
+    },
+    "agent_risk_level": "HIGH",
+    "escalation_applied": false,
+    "escalation_reason": "No additional escalation was required. The agent accepted the ML assessment.",
+    "security_profile": {
+      "name": "HIGH",
+      "kem": "ML-KEM-1024",
+      "signature": "ML-DSA-87",
+      "description": "Stronger quantum-resistant policy for active attack conditions."
+    },
+    "action": {
+      "action": "LOCK_AUTHENTICATION",
+      "message": "Authentication locked due to HIGH risk context.",
+      "execution_status": "HARDWARE_COMMAND_QUEUED"
+    },
+    "observations": [
+      "Repeated authentication failures detected.",
+      "Network anomaly detected.",
+      "Threat indicator is active.",
+      "Elevated communication latency observed.",
+      "High CPU utilization observed.",
+      "High memory utilization observed."
+    ],
+    "reasoning": [
+      "Random Forest initially assessed the environment as HIGH risk.",
+      "ML risk = HIGH; HIGH confidence = 94.23%; MEDIUM confidence = 5.77%.",
+      "Critical security indicators detected: 6.",
+      "No additional escalation was required. The agent accepted the ML assessment."
+    ],
+    "context": {
+      "battery_level": 85,
+      "cpu_utilization": 90,
+      "memory_usage": 87,
+      "failed_auth_attempts": 12,
+      "successful_auth_attempts": 0,
+      "communication_latency_ms": 320,
+      "network_anomaly": 1,
+      "threat_indicator": 1
+    },
+    "timestamp": "2026-09-02T16:00:00+05:30"
+  },
+  {
+    "source": "ESP8266_KEYPAD",
+    "device_id": "DOOR-001",
+    "event_id": "TEST-BRUTE-1-1788359118962",
+    "result": "FAILED",
+    "attempted_password": "UNKNOWN",
+    "pin_attempt_hash": "3d0949c5913cc2e0bcb5bcea801dba26fd8cfcd1b0ba9938568bebbe233d3709",
+    "user": "UNKNOWN",
+    "failed_attempt_number": 13,
+    "ml_risk_level": "HIGH",
+    "ml_risk_confidence": {
+      "HIGH": 0.9423,
+      "LOW": 0.0,
+      "MEDIUM": 0.0577
+    },
+    "agent_risk_level": "HIGH",
+    "escalation_applied": false,
+    "escalation_reason": "No additional escalation was required. The agent accepted the ML assessment.",
+    "security_profile": {
+      "name": "HIGH",
+      "kem": "ML-KEM-1024",
+      "signature": "ML-DSA-87",
+      "description": "Stronger quantum-resistant policy for active attack conditions."
+    },
+    "action": {
+      "action": "LOCK_AUTHENTICATION",
+      "message": "Authentication locked due to HIGH risk context.",
+      "execution_status": "HARDWARE_COMMAND_QUEUED"
+    },
+    "observations": [
+      "Repeated authentication failures detected.",
+      "Network anomaly detected.",
+      "Threat indicator is active.",
+      "Elevated communication latency observed.",
+      "High CPU utilization observed.",
+      "High memory utilization observed."
+    ],
+    "reasoning": [
+      "Random Forest initially assessed the environment as HIGH risk.",
+      "ML risk = HIGH; HIGH confidence = 94.23%; MEDIUM confidence = 5.77%.",
+      "Critical security indicators detected: 6.",
+      "No additional escalation was required. The agent accepted the ML assessment."
+    ],
+    "context": {
+      "battery_level": 85,
+      "cpu_utilization": 90,
+      "memory_usage": 87,
+      "failed_auth_attempts": 13,
+      "successful_auth_attempts": 0,
+      "communication_latency_ms": 320,
+      "network_anomaly": 1,
+      "threat_indicator": 1
+    },
+    "timestamp": "2026-09-02T16:00:00+05:30"
+  },
+  {
+    "source": "ESP8266_KEYPAD",
+    "device_id": "DOOR-001",
+    "event_id": "TEST-BRUTE-2-1788359121416",
+    "result": "FAILED",
+    "attempted_password": "UNKNOWN",
+    "pin_attempt_hash": "9a1e9fa6103a68763ac32af73a33d5364ce2e92be58cfafe65ccb5dd8fd20016",
+    "user": "UNKNOWN",
+    "failed_attempt_number": 14,
+    "ml_risk_level": "HIGH",
+    "ml_risk_confidence": {
+      "HIGH": 0.9383,
+      "LOW": 0.0,
+      "MEDIUM": 0.0617
+    },
+    "agent_risk_level": "HIGH",
+    "escalation_applied": false,
+    "escalation_reason": "No additional escalation was required. The agent accepted the ML assessment.",
+    "security_profile": {
+      "name": "HIGH",
+      "kem": "ML-KEM-1024",
+      "signature": "ML-DSA-87",
+      "description": "Stronger quantum-resistant policy for active attack conditions."
+    },
+    "action": {
+      "action": "LOCK_AUTHENTICATION",
+      "message": "Authentication locked due to HIGH risk context.",
+      "execution_status": "HARDWARE_COMMAND_QUEUED"
+    },
+    "observations": [
+      "Repeated authentication failures detected.",
+      "Network anomaly detected.",
+      "Threat indicator is active.",
+      "Elevated communication latency observed.",
+      "High CPU utilization observed.",
+      "High memory utilization observed."
+    ],
+    "reasoning": [
+      "Random Forest initially assessed the environment as HIGH risk.",
+      "ML risk = HIGH; HIGH confidence = 93.83%; MEDIUM confidence = 6.17%.",
+      "Critical security indicators detected: 6.",
+      "No additional escalation was required. The agent accepted the ML assessment."
+    ],
+    "context": {
+      "battery_level": 85,
+      "cpu_utilization": 90,
+      "memory_usage": 87,
+      "failed_auth_attempts": 14,
+      "successful_auth_attempts": 0,
+      "communication_latency_ms": 320,
+      "network_anomaly": 1,
+      "threat_indicator": 1
+    },
+    "timestamp": "2026-09-02T16:00:00+05:30"
+  },
+  {
+    "source": "ESP8266_KEYPAD",
+    "device_id": "DOOR-001",
+    "event_id": "TEST-BRUTE-3-1788359129616",
+    "result": "FAILED",
+    "attempted_password": "UNKNOWN",
+    "pin_attempt_hash": "c33c260cefb053527853df6024309911c9d30129315806d7d78bc292a19f7985",
+    "user": "UNKNOWN",
+    "failed_attempt_number": 15,
+    "ml_risk_level": "HIGH",
+    "ml_risk_confidence": {
+      "HIGH": 0.9405,
+      "LOW": 0.0,
+      "MEDIUM": 0.0595
+    },
+    "agent_risk_level": "HIGH",
+    "escalation_applied": false,
+    "escalation_reason": "No additional escalation was required. The agent accepted the ML assessment.",
+    "security_profile": {
+      "name": "HIGH",
+      "kem": "ML-KEM-1024",
+      "signature": "ML-DSA-87",
+      "description": "Stronger quantum-resistant policy for active attack conditions."
+    },
+    "action": {
+      "action": "LOCK_AUTHENTICATION",
+      "message": "Authentication locked due to HIGH risk context.",
+      "execution_status": "HARDWARE_COMMAND_QUEUED"
+    },
+    "observations": [
+      "Repeated authentication failures detected.",
+      "Network anomaly detected.",
+      "Threat indicator is active.",
+      "Elevated communication latency observed.",
+      "High CPU utilization observed.",
+      "High memory utilization observed."
+    ],
+    "reasoning": [
+      "Random Forest initially assessed the environment as HIGH risk.",
+      "ML risk = HIGH; HIGH confidence = 94.05%; MEDIUM confidence = 5.95%.",
+      "Critical security indicators detected: 6.",
+      "No additional escalation was required. The agent accepted the ML assessment."
+    ],
+    "context": {
+      "battery_level": 85,
+      "cpu_utilization": 90,
+      "memory_usage": 87,
+      "failed_auth_attempts": 15,
+      "successful_auth_attempts": 0,
+      "communication_latency_ms": 320,
+      "network_anomaly": 1,
+      "threat_indicator": 1
+    },
+    "timestamp": "2026-09-02T16:00:00+05:30"
+  },
+  {
+    "source": "ESP8266_KEYPAD",
+    "device_id": "DOOR-001",
+    "event_id": "TEST-BRUTE-4-1788359132208",
+    "result": "FAILED",
+    "attempted_password": "UNKNOWN",
+    "pin_attempt_hash": "30547e947af7e9902ae506af8295f8b5262e1a991a93c8458c11a98d6ae3fd70",
+    "user": "UNKNOWN",
+    "failed_attempt_number": 16,
+    "ml_risk_level": "HIGH",
+    "ml_risk_confidence": {
+      "HIGH": 0.9405,
+      "LOW": 0.0,
+      "MEDIUM": 0.0595
+    },
+    "agent_risk_level": "HIGH",
+    "escalation_applied": false,
+    "escalation_reason": "No additional escalation was required. The agent accepted the ML assessment.",
+    "security_profile": {
+      "name": "HIGH",
+      "kem": "ML-KEM-1024",
+      "signature": "ML-DSA-87",
+      "description": "Stronger quantum-resistant policy for active attack conditions."
+    },
+    "action": {
+      "action": "LOCK_AUTHENTICATION",
+      "message": "Authentication locked due to HIGH risk context.",
+      "execution_status": "HARDWARE_COMMAND_QUEUED"
+    },
+    "observations": [
+      "Repeated authentication failures detected.",
+      "Network anomaly detected.",
+      "Threat indicator is active.",
+      "Elevated communication latency observed.",
+      "High CPU utilization observed.",
+      "High memory utilization observed."
+    ],
+    "reasoning": [
+      "Random Forest initially assessed the environment as HIGH risk.",
+      "ML risk = HIGH; HIGH confidence = 94.05%; MEDIUM confidence = 5.95%.",
+      "Critical security indicators detected: 6.",
+      "No additional escalation was required. The agent accepted the ML assessment."
+    ],
+    "context": {
+      "battery_level": 85,
+      "cpu_utilization": 90,
+      "memory_usage": 87,
+      "failed_auth_attempts": 16,
+      "successful_auth_attempts": 0,
+      "communication_latency_ms": 320,
+      "network_anomaly": 1,
+      "threat_indicator": 1
+    },
+    "timestamp": "2026-09-02T16:00:00+05:30"
+  },
+  {
+    "source": "ESP8266_KEYPAD",
+    "device_id": "DOOR-001",
+    "event_id": "TEST-SUCCESS-1788361346036",
+    "result": "SUCCESS",
+    "attempted_password": "1234",
+    "pin_attempt_hash": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+    "user": "DAD",
+    "ml_risk_level": "LOW",
+    "agent_risk_level": "LOW",
+    "escalation_applied": false,
+    "escalation_reason": "",
+    "security_profile": {
+      "name": "LOW",
+      "kem": "ML-KEM-512",
+      "signature": "ML-DSA-44",
+      "description": "Resource-conscious quantum-resistant policy for normal door-lock operation."
+    },
+    "action": {
+      "action": "AUTHENTICATION_SUCCESS",
+      "message": "Authorized user DAD authenticated via hardware keypad.",
+      "execution_status": "DOOR_UNLOCK_COMMAND_ISSUED"
+    },
+    "reason": "Authorized user DAD accepted.",
+    "timestamp": "2026-09-02T16:00:00+05:30"
+  },
+  {
+    "source": "ESP8266_KEYPAD",
+    "device_id": "DOOR-001",
+    "event_id": "TEST-FAIL-1788361350281",
+    "result": "FAILED",
+    "attempted_password": "UNKNOWN",
+    "pin_attempt_hash": "9af15b336e6a9619928537df30b2e6a2376569fcf9d7e773eccede65606529a0",
+    "user": "UNKNOWN",
+    "failed_attempt_number": 17,
+    "ml_risk_level": "HIGH",
+    "ml_risk_confidence": {
+      "HIGH": 0.9405,
+      "LOW": 0.0,
+      "MEDIUM": 0.0595
+    },
+    "agent_risk_level": "HIGH",
+    "escalation_applied": false,
+    "escalation_reason": "No additional escalation was required. The agent accepted the ML assessment.",
+    "security_profile": {
+      "name": "HIGH",
+      "kem": "ML-KEM-1024",
+      "signature": "ML-DSA-87",
+      "description": "Stronger quantum-resistant policy for active attack conditions."
+    },
+    "action": {
+      "action": "LOCK_AUTHENTICATION",
+      "message": "Authentication locked due to HIGH risk context.",
+      "execution_status": "HARDWARE_COMMAND_QUEUED"
+    },
+    "observations": [
+      "Repeated authentication failures detected.",
+      "Network anomaly detected.",
+      "Threat indicator is active.",
+      "Elevated communication latency observed.",
+      "High CPU utilization observed.",
+      "High memory utilization observed."
+    ],
+    "reasoning": [
+      "Random Forest initially assessed the environment as HIGH risk.",
+      "ML risk = HIGH; HIGH confidence = 94.05%; MEDIUM confidence = 5.95%.",
+      "Critical security indicators detected: 6.",
+      "No additional escalation was required. The agent accepted the ML assessment."
+    ],
+    "context": {
+      "battery_level": 85,
+      "cpu_utilization": 90,
+      "memory_usage": 87,
+      "failed_auth_attempts": 17,
+      "successful_auth_attempts": 0,
+      "communication_latency_ms": 320,
+      "network_anomaly": 1,
+      "threat_indicator": 1
+    },
+    "timestamp": "2026-09-02T16:00:00+05:30"
+  },
+  {
+    "source": "ESP8266_KEYPAD",
+    "device_id": "DOOR-001",
+    "event_id": "TEST-DUP-1788361357957",
+    "result": "SUCCESS",
+    "attempted_password": "1234",
+    "pin_attempt_hash": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+    "user": "DAD",
+    "ml_risk_level": "LOW",
+    "agent_risk_level": "LOW",
+    "escalation_applied": false,
+    "escalation_reason": "",
+    "security_profile": {
+      "name": "LOW",
+      "kem": "ML-KEM-512",
+      "signature": "ML-DSA-44",
+      "description": "Resource-conscious quantum-resistant policy for normal door-lock operation."
+    },
+    "action": {
+      "action": "AUTHENTICATION_SUCCESS",
+      "message": "Authorized user DAD authenticated via hardware keypad.",
+      "execution_status": "DOOR_UNLOCK_COMMAND_ISSUED"
+    },
+    "reason": "Authorized user DAD accepted.",
+    "timestamp": "2026-09-02T20:32:37+05:30"
+  },
+  {
+    "source": "ESP8266_KEYPAD",
+    "device_id": "DOOR-001",
+    "event_id": "TEST-MOM-1788361361359",
+    "result": "SUCCESS",
+    "attempted_password": "5678",
+    "pin_attempt_hash": "f8638b979b2f4f793ddb6dbd197e0ee25a7a6ea32b0ae22f5e3c5d119d839e75",
+    "user": "MOM",
+    "ml_risk_level": "LOW",
+    "agent_risk_level": "LOW",
+    "escalation_applied": false,
+    "escalation_reason": "",
+    "security_profile": {
+      "name": "LOW",
+      "kem": "ML-KEM-512",
+      "signature": "ML-DSA-44",
+      "description": "Resource-conscious quantum-resistant policy for normal door-lock operation."
+    },
+    "action": {
+      "action": "AUTHENTICATION_SUCCESS",
+      "message": "Authorized user MOM authenticated via hardware keypad.",
+      "execution_status": "DOOR_UNLOCK_COMMAND_ISSUED"
+    },
+    "reason": "Authorized user MOM accepted.",
+    "timestamp": "2026-09-02T16:00:00+05:30"
+  },
+  {
+    "source": "ESP8266_KEYPAD",
+    "device_id": "DOOR-001",
+    "event_id": "TEST-BRUTE-0-1788361371379",
+    "result": "FAILED",
+    "attempted_password": "UNKNOWN",
+    "pin_attempt_hash": "80ae015febb99836b5143ac90a21f7831d328983aad118bd56aa2d5dbc97c635",
+    "user": "UNKNOWN",
+    "failed_attempt_number": 18,
+    "ml_risk_level": "HIGH",
+    "ml_risk_confidence": {
+      "HIGH": 0.9405,
+      "LOW": 0.0,
+      "MEDIUM": 0.0595
+    },
+    "agent_risk_level": "HIGH",
+    "escalation_applied": false,
+    "escalation_reason": "No additional escalation was required. The agent accepted the ML assessment.",
+    "security_profile": {
+      "name": "HIGH",
+      "kem": "ML-KEM-1024",
+      "signature": "ML-DSA-87",
+      "description": "Stronger quantum-resistant policy for active attack conditions."
+    },
+    "action": {
+      "action": "LOCK_AUTHENTICATION",
+      "message": "Authentication locked due to HIGH risk context.",
+      "execution_status": "HARDWARE_COMMAND_QUEUED"
+    },
+    "observations": [
+      "Repeated authentication failures detected.",
+      "Network anomaly detected.",
+      "Threat indicator is active.",
+      "Elevated communication latency observed.",
+      "High CPU utilization observed.",
+      "High memory utilization observed."
+    ],
+    "reasoning": [
+      "Random Forest initially assessed the environment as HIGH risk.",
+      "ML risk = HIGH; HIGH confidence = 94.05%; MEDIUM confidence = 5.95%.",
+      "Critical security indicators detected: 6.",
+      "No additional escalation was required. The agent accepted the ML assessment."
+    ],
+    "context": {
+      "battery_level": 85,
+      "cpu_utilization": 90,
+      "memory_usage": 87,
+      "failed_auth_attempts": 18,
+      "successful_auth_attempts": 0,
+      "communication_latency_ms": 320,
+      "network_anomaly": 1,
+      "threat_indicator": 1
+    },
+    "timestamp": "2026-09-02T16:00:00+05:30"
+  },
+  {
+    "source": "ESP8266_KEYPAD",
+    "device_id": "DOOR-001",
+    "event_id": "TEST-BRUTE-1-1788361374664",
+    "result": "FAILED",
+    "attempted_password": "UNKNOWN",
+    "pin_attempt_hash": "3d0949c5913cc2e0bcb5bcea801dba26fd8cfcd1b0ba9938568bebbe233d3709",
+    "user": "UNKNOWN",
+    "failed_attempt_number": 19,
+    "ml_risk_level": "HIGH",
+    "ml_risk_confidence": {
+      "HIGH": 0.9405,
+      "LOW": 0.0,
+      "MEDIUM": 0.0595
+    },
+    "agent_risk_level": "HIGH",
+    "escalation_applied": false,
+    "escalation_reason": "No additional escalation was required. The agent accepted the ML assessment.",
+    "security_profile": {
+      "name": "HIGH",
+      "kem": "ML-KEM-1024",
+      "signature": "ML-DSA-87",
+      "description": "Stronger quantum-resistant policy for active attack conditions."
+    },
+    "action": {
+      "action": "LOCK_AUTHENTICATION",
+      "message": "Authentication locked due to HIGH risk context.",
+      "execution_status": "HARDWARE_COMMAND_QUEUED"
+    },
+    "observations": [
+      "Repeated authentication failures detected.",
+      "Network anomaly detected.",
+      "Threat indicator is active.",
+      "Elevated communication latency observed.",
+      "High CPU utilization observed.",
+      "High memory utilization observed."
+    ],
+    "reasoning": [
+      "Random Forest initially assessed the environment as HIGH risk.",
+      "ML risk = HIGH; HIGH confidence = 94.05%; MEDIUM confidence = 5.95%.",
+      "Critical security indicators detected: 6.",
+      "No additional escalation was required. The agent accepted the ML assessment."
+    ],
+    "context": {
+      "battery_level": 85,
+      "cpu_utilization": 90,
+      "memory_usage": 87,
+      "failed_auth_attempts": 19,
+      "successful_auth_attempts": 0,
+      "communication_latency_ms": 320,
+      "network_anomaly": 1,
+      "threat_indicator": 1
+    },
+    "timestamp": "2026-09-02T16:00:00+05:30"
+  },
+  {
+    "source": "ESP8266_KEYPAD",
+    "device_id": "DOOR-001",
+    "event_id": "TEST-BRUTE-2-1788361377830",
+    "result": "FAILED",
+    "attempted_password": "UNKNOWN",
+    "pin_attempt_hash": "9a1e9fa6103a68763ac32af73a33d5364ce2e92be58cfafe65ccb5dd8fd20016",
+    "user": "UNKNOWN",
+    "failed_attempt_number": 20,
+    "ml_risk_level": "HIGH",
+    "ml_risk_confidence": {
+      "HIGH": 0.9405,
+      "LOW": 0.0,
+      "MEDIUM": 0.0595
+    },
+    "agent_risk_level": "HIGH",
+    "escalation_applied": false,
+    "escalation_reason": "No additional escalation was required. The agent accepted the ML assessment.",
+    "security_profile": {
+      "name": "HIGH",
+      "kem": "ML-KEM-1024",
+      "signature": "ML-DSA-87",
+      "description": "Stronger quantum-resistant policy for active attack conditions."
+    },
+    "action": {
+      "action": "LOCK_AUTHENTICATION",
+      "message": "Authentication locked due to HIGH risk context.",
+      "execution_status": "HARDWARE_COMMAND_QUEUED"
+    },
+    "observations": [
+      "Repeated authentication failures detected.",
+      "Network anomaly detected.",
+      "Threat indicator is active.",
+      "Elevated communication latency observed.",
+      "High CPU utilization observed.",
+      "High memory utilization observed."
+    ],
+    "reasoning": [
+      "Random Forest initially assessed the environment as HIGH risk.",
+      "ML risk = HIGH; HIGH confidence = 94.05%; MEDIUM confidence = 5.95%.",
+      "Critical security indicators detected: 6.",
+      "No additional escalation was required. The agent accepted the ML assessment."
+    ],
+    "context": {
+      "battery_level": 85,
+      "cpu_utilization": 90,
+      "memory_usage": 87,
+      "failed_auth_attempts": 20,
+      "successful_auth_attempts": 0,
+      "communication_latency_ms": 320,
+      "network_anomaly": 1,
+      "threat_indicator": 1
+    },
+    "timestamp": "2026-09-02T16:00:00+05:30"
+  },
+  {
+    "source": "ESP8266_KEYPAD",
+    "device_id": "DOOR-001",
+    "event_id": "TEST-BRUTE-3-1788361381831",
+    "result": "FAILED",
+    "attempted_password": "UNKNOWN",
+    "pin_attempt_hash": "c33c260cefb053527853df6024309911c9d30129315806d7d78bc292a19f7985",
+    "user": "UNKNOWN",
+    "failed_attempt_number": 21,
+    "ml_risk_level": "HIGH",
+    "ml_risk_confidence": {
+      "HIGH": 0.9405,
+      "LOW": 0.0,
+      "MEDIUM": 0.0595
+    },
+    "agent_risk_level": "HIGH",
+    "escalation_applied": false,
+    "escalation_reason": "No additional escalation was required. The agent accepted the ML assessment.",
+    "security_profile": {
+      "name": "HIGH",
+      "kem": "ML-KEM-1024",
+      "signature": "ML-DSA-87",
+      "description": "Stronger quantum-resistant policy for active attack conditions."
+    },
+    "action": {
+      "action": "LOCK_AUTHENTICATION",
+      "message": "Authentication locked due to HIGH risk context.",
+      "execution_status": "HARDWARE_COMMAND_QUEUED"
+    },
+    "observations": [
+      "Repeated authentication failures detected.",
+      "Network anomaly detected.",
+      "Threat indicator is active.",
+      "Elevated communication latency observed.",
+      "High CPU utilization observed.",
+      "High memory utilization observed."
+    ],
+    "reasoning": [
+      "Random Forest initially assessed the environment as HIGH risk.",
+      "ML risk = HIGH; HIGH confidence = 94.05%; MEDIUM confidence = 5.95%.",
+      "Critical security indicators detected: 6.",
+      "No additional escalation was required. The agent accepted the ML assessment."
+    ],
+    "context": {
+      "battery_level": 85,
+      "cpu_utilization": 90,
+      "memory_usage": 87,
+      "failed_auth_attempts": 21,
+      "successful_auth_attempts": 0,
+      "communication_latency_ms": 320,
+      "network_anomaly": 1,
+      "threat_indicator": 1
+    },
+    "timestamp": "2026-09-02T16:00:00+05:30"
+  },
+  {
+    "source": "ESP8266_KEYPAD",
+    "device_id": "DOOR-001",
+    "event_id": "TEST-BRUTE-4-1788361385560",
+    "result": "FAILED",
+    "attempted_password": "UNKNOWN",
+    "pin_attempt_hash": "30547e947af7e9902ae506af8295f8b5262e1a991a93c8458c11a98d6ae3fd70",
+    "user": "UNKNOWN",
+    "failed_attempt_number": 22,
+    "ml_risk_level": "HIGH",
+    "ml_risk_confidence": {
+      "HIGH": 0.9405,
+      "LOW": 0.0,
+      "MEDIUM": 0.0595
+    },
+    "agent_risk_level": "HIGH",
+    "escalation_applied": false,
+    "escalation_reason": "No additional escalation was required. The agent accepted the ML assessment.",
+    "security_profile": {
+      "name": "HIGH",
+      "kem": "ML-KEM-1024",
+      "signature": "ML-DSA-87",
+      "description": "Stronger quantum-resistant policy for active attack conditions."
+    },
+    "action": {
+      "action": "LOCK_AUTHENTICATION",
+      "message": "Authentication locked due to HIGH risk context.",
+      "execution_status": "HARDWARE_COMMAND_QUEUED"
+    },
+    "observations": [
+      "Repeated authentication failures detected.",
+      "Network anomaly detected.",
+      "Threat indicator is active.",
+      "Elevated communication latency observed.",
+      "High CPU utilization observed.",
+      "High memory utilization observed."
+    ],
+    "reasoning": [
+      "Random Forest initially assessed the environment as HIGH risk.",
+      "ML risk = HIGH; HIGH confidence = 94.05%; MEDIUM confidence = 5.95%.",
+      "Critical security indicators detected: 6.",
+      "No additional escalation was required. The agent accepted the ML assessment."
+    ],
+    "context": {
+      "battery_level": 85,
+      "cpu_utilization": 90,
+      "memory_usage": 87,
+      "failed_auth_attempts": 22,
+      "successful_auth_attempts": 0,
+      "communication_latency_ms": 320,
+      "network_anomaly": 1,
+      "threat_indicator": 1
+    },
+    "timestamp": "2026-09-02T16:00:00+05:30"
+  },
+  {
+    "source": "WEB_UI",
+    "result": "SUCCESS",
+    "attempted_password": "1234",
+    "user": "DAD",
+    "ml_risk_level": "LOW",
+    "agent_risk_level": "LOW",
+    "escalation_applied": false,
+    "escalation_reason": "",
+    "security_profile": {
+      "name": "LOW",
+      "kem": "ML-KEM-512",
+      "signature": "ML-DSA-44"
+    },
+    "action": {
+      "action": "OPEN_DOOR",
+      "message": "Authorized authentication accepted. Door opened."
+    },
+    "reason": "Authorized local keyboard authentication.",
+    "event_id": "84d9b5aff360965f",
+    "timestamp": "2026-09-02T20:55:09+05:30"
+  },
+  {
+    "source": "WEB_UI",
+    "result": "FAILED",
+    "attempted_password": "123",
+    "user": "UNKNOWN",
+    "failed_attempt_number": 23,
+    "ml_risk_level": "HIGH",
+    "ml_risk_confidence": {
+      "HIGH": 0.9405,
+      "LOW": 0.0,
+      "MEDIUM": 0.0595
+    },
+    "agent_risk_level": "HIGH",
+    "escalation_applied": false,
+    "escalation_reason": "No additional escalation was required. The agent accepted the ML assessment.",
+    "security_profile": {
+      "name": "HIGH",
+      "kem": "ML-KEM-1024",
+      "signature": "ML-DSA-87",
+      "description": "Stronger quantum-resistant policy for active attack conditions."
+    },
+    "action": {
+      "action": "LOCK_AUTHENTICATION",
+      "message": "Authentication temporarily locked.",
+      "execution_status": "COMMAND_READY_FOR_DOOR_CONTROLLER"
+    },
+    "observations": [
+      "Repeated authentication failures detected.",
+      "Network anomaly detected.",
+      "Threat indicator is active.",
+      "Elevated communication latency observed.",
+      "High CPU utilization observed.",
+      "High memory utilization observed."
+    ],
+    "reasoning": [
+      "Random Forest initially assessed the environment as HIGH risk.",
+      "ML risk = HIGH; HIGH confidence = 94.05%; MEDIUM confidence = 5.95%.",
+      "Critical security indicators detected: 6.",
+      "No additional escalation was required. The agent accepted the ML assessment."
+    ],
+    "context": {
+      "battery_level": 85,
+      "cpu_utilization": 90,
+      "memory_usage": 87,
+      "failed_auth_attempts": 23,
+      "successful_auth_attempts": 0,
+      "communication_latency_ms": 320,
+      "network_anomaly": 1,
+      "threat_indicator": 1
+    },
+    "event_id": "90b3e6b5bb5cac34",
+    "timestamp": "2026-09-02T20:56:03+05:30"
+  },
+  {
+    "source": "WEB_UI",
+    "result": "FAILED",
+    "attempted_password": "9999",
+    "user": "UNKNOWN",
+    "failed_attempt_number": 24,
+    "ml_risk_level": "HIGH",
+    "ml_risk_confidence": {
+      "HIGH": 0.9405,
+      "LOW": 0.0,
+      "MEDIUM": 0.0595
+    },
+    "agent_risk_level": "HIGH",
+    "escalation_applied": false,
+    "escalation_reason": "No additional escalation was required. The agent accepted the ML assessment.",
+    "security_profile": {
+      "name": "HIGH",
+      "kem": "ML-KEM-1024",
+      "signature": "ML-DSA-87",
+      "description": "Stronger quantum-resistant policy for active attack conditions."
+    },
+    "action": {
+      "action": "LOCK_AUTHENTICATION",
+      "message": "Authentication temporarily locked.",
+      "execution_status": "COMMAND_READY_FOR_DOOR_CONTROLLER"
+    },
+    "observations": [
+      "Repeated authentication failures detected.",
+      "Network anomaly detected.",
+      "Threat indicator is active.",
+      "Elevated communication latency observed.",
+      "High CPU utilization observed.",
+      "High memory utilization observed."
+    ],
+    "reasoning": [
+      "Random Forest initially assessed the environment as HIGH risk.",
+      "ML risk = HIGH; HIGH confidence = 94.05%; MEDIUM confidence = 5.95%.",
+      "Critical security indicators detected: 6.",
+      "No additional escalation was required. The agent accepted the ML assessment."
+    ],
+    "context": {
+      "battery_level": 85,
+      "cpu_utilization": 90,
+      "memory_usage": 87,
+      "failed_auth_attempts": 24,
+      "successful_auth_attempts": 0,
+      "communication_latency_ms": 320,
+      "network_anomaly": 1,
+      "threat_indicator": 1
+    },
+    "event_id": "b7684bd414cee885",
+    "timestamp": "2026-09-02T20:57:47+05:30"
+  },
+  {
+    "source": "WEB_UI",
+    "result": "FAILED",
+    "attempted_password": "1111",
+    "user": "UNKNOWN",
+    "failed_attempt_number": 25,
+    "ml_risk_level": "HIGH",
+    "ml_risk_confidence": {
+      "HIGH": 0.9405,
+      "LOW": 0.0,
+      "MEDIUM": 0.0595
+    },
+    "agent_risk_level": "HIGH",
+    "escalation_applied": false,
+    "escalation_reason": "No additional escalation was required. The agent accepted the ML assessment.",
+    "security_profile": {
+      "name": "HIGH",
+      "kem": "ML-KEM-1024",
+      "signature": "ML-DSA-87",
+      "description": "Stronger quantum-resistant policy for active attack conditions."
+    },
+    "action": {
+      "action": "LOCK_AUTHENTICATION",
+      "message": "Authentication temporarily locked.",
+      "execution_status": "COMMAND_READY_FOR_DOOR_CONTROLLER"
+    },
+    "observations": [
+      "Repeated authentication failures detected.",
+      "Network anomaly detected.",
+      "Threat indicator is active.",
+      "Elevated communication latency observed.",
+      "High CPU utilization observed.",
+      "High memory utilization observed."
+    ],
+    "reasoning": [
+      "Random Forest initially assessed the environment as HIGH risk.",
+      "ML risk = HIGH; HIGH confidence = 94.05%; MEDIUM confidence = 5.95%.",
+      "Critical security indicators detected: 6.",
+      "No additional escalation was required. The agent accepted the ML assessment."
+    ],
+    "context": {
+      "battery_level": 85,
+      "cpu_utilization": 90,
+      "memory_usage": 87,
+      "failed_auth_attempts": 25,
+      "successful_auth_attempts": 0,
+      "communication_latency_ms": 320,
+      "network_anomaly": 1,
+      "threat_indicator": 1
+    },
+    "event_id": "37b3085dddaafaed",
+    "timestamp": "2026-09-02T20:57:56+05:30"
+  },
+  {
+    "source": "WEB_UI",
+    "result": "FAILED",
+    "attempted_password": "1111",
+    "user": "UNKNOWN",
+    "failed_attempt_number": 26,
+    "ml_risk_level": "HIGH",
+    "ml_risk_confidence": {
+      "HIGH": 0.9405,
+      "LOW": 0.0,
+      "MEDIUM": 0.0595
+    },
+    "agent_risk_level": "HIGH",
+    "escalation_applied": false,
+    "escalation_reason": "No additional escalation was required. The agent accepted the ML assessment.",
+    "security_profile": {
+      "name": "HIGH",
+      "kem": "ML-KEM-1024",
+      "signature": "ML-DSA-87",
+      "description": "Stronger quantum-resistant policy for active attack conditions."
+    },
+    "action": {
+      "action": "LOCK_AUTHENTICATION",
+      "message": "Authentication temporarily locked.",
+      "execution_status": "COMMAND_READY_FOR_DOOR_CONTROLLER"
+    },
+    "observations": [
+      "Repeated authentication failures detected.",
+      "Network anomaly detected.",
+      "Threat indicator is active.",
+      "Elevated communication latency observed.",
+      "High CPU utilization observed.",
+      "High memory utilization observed."
+    ],
+    "reasoning": [
+      "Random Forest initially assessed the environment as HIGH risk.",
+      "ML risk = HIGH; HIGH confidence = 94.05%; MEDIUM confidence = 5.95%.",
+      "Critical security indicators detected: 6.",
+      "No additional escalation was required. The agent accepted the ML assessment."
+    ],
+    "context": {
+      "battery_level": 85,
+      "cpu_utilization": 90,
+      "memory_usage": 87,
+      "failed_auth_attempts": 26,
+      "successful_auth_attempts": 0,
+      "communication_latency_ms": 320,
+      "network_anomaly": 1,
+      "threat_indicator": 1
+    },
+    "event_id": "3f28c051147a632e",
+    "timestamp": "2026-09-02T20:57:59+05:30"
+  },
+  {
+    "source": "WEB_UI",
+    "result": "FAILED",
+    "attempted_password": "9999",
+    "user": "UNKNOWN",
+    "failed_attempt_number": 27,
+    "ml_risk_level": "HIGH",
+    "ml_risk_confidence": {
+      "HIGH": 0.9405,
+      "LOW": 0.0,
+      "MEDIUM": 0.0595
+    },
+    "agent_risk_level": "HIGH",
+    "escalation_applied": false,
+    "escalation_reason": "No additional escalation was required. The agent accepted the ML assessment.",
+    "security_profile": {
+      "name": "HIGH",
+      "kem": "ML-KEM-1024",
+      "signature": "ML-DSA-87",
+      "description": "Stronger quantum-resistant policy for active attack conditions."
+    },
+    "action": {
+      "action": "LOCK_AUTHENTICATION",
+      "message": "Authentication temporarily locked.",
+      "execution_status": "COMMAND_READY_FOR_DOOR_CONTROLLER"
+    },
+    "observations": [
+      "Repeated authentication failures detected.",
+      "Network anomaly detected.",
+      "Threat indicator is active.",
+      "Elevated communication latency observed.",
+      "High CPU utilization observed.",
+      "High memory utilization observed."
+    ],
+    "reasoning": [
+      "Random Forest initially assessed the environment as HIGH risk.",
+      "ML risk = HIGH; HIGH confidence = 94.05%; MEDIUM confidence = 5.95%.",
+      "Critical security indicators detected: 6.",
+      "No additional escalation was required. The agent accepted the ML assessment."
+    ],
+    "context": {
+      "battery_level": 85,
+      "cpu_utilization": 90,
+      "memory_usage": 87,
+      "failed_auth_attempts": 27,
+      "successful_auth_attempts": 0,
+      "communication_latency_ms": 320,
+      "network_anomaly": 1,
+      "threat_indicator": 1
+    },
+    "event_id": "fb0e2ba4d65fb1b7",
+    "timestamp": "2026-09-02T20:58:08+05:30"
+  },
+  {
+    "source": "WEB_UI",
+    "result": "FAILED",
+    "attempted_password": "9",
+    "user": "UNKNOWN",
+    "failed_attempt_number": 28,
+    "ml_risk_level": "HIGH",
+    "ml_risk_confidence": {
+      "HIGH": 0.9405,
+      "LOW": 0.0,
+      "MEDIUM": 0.0595
+    },
+    "agent_risk_level": "HIGH",
+    "escalation_applied": false,
+    "escalation_reason": "No additional escalation was required. The agent accepted the ML assessment.",
+    "security_profile": {
+      "name": "HIGH",
+      "kem": "ML-KEM-1024",
+      "signature": "ML-DSA-87",
+      "description": "Stronger quantum-resistant policy for active attack conditions."
+    },
+    "action": {
+      "action": "LOCK_AUTHENTICATION",
+      "message": "Authentication temporarily locked.",
+      "execution_status": "COMMAND_READY_FOR_DOOR_CONTROLLER"
+    },
+    "observations": [
+      "Repeated authentication failures detected.",
+      "Network anomaly detected.",
+      "Threat indicator is active.",
+      "Elevated communication latency observed.",
+      "High CPU utilization observed.",
+      "High memory utilization observed."
+    ],
+    "reasoning": [
+      "Random Forest initially assessed the environment as HIGH risk.",
+      "ML risk = HIGH; HIGH confidence = 94.05%; MEDIUM confidence = 5.95%.",
+      "Critical security indicators detected: 6.",
+      "No additional escalation was required. The agent accepted the ML assessment."
+    ],
+    "context": {
+      "battery_level": 85,
+      "cpu_utilization": 90,
+      "memory_usage": 87,
+      "failed_auth_attempts": 28,
+      "successful_auth_attempts": 0,
+      "communication_latency_ms": 320,
+      "network_anomaly": 1,
+      "threat_indicator": 1
+    },
+    "event_id": "618b07baf27da2fc",
+    "timestamp": "2026-09-02T20:58:09+05:30"
+  },
+  {
+    "source": "WEB_UI",
+    "result": "FAILED",
+    "attempted_password": "2222",
+    "user": "UNKNOWN",
+    "failed_attempt_number": 29,
+    "ml_risk_level": "HIGH",
+    "ml_risk_confidence": {
+      "HIGH": 0.9405,
+      "LOW": 0.0,
+      "MEDIUM": 0.0595
+    },
+    "agent_risk_level": "HIGH",
+    "escalation_applied": false,
+    "escalation_reason": "No additional escalation was required. The agent accepted the ML assessment.",
+    "security_profile": {
+      "name": "HIGH",
+      "kem": "ML-KEM-1024",
+      "signature": "ML-DSA-87",
+      "description": "Stronger quantum-resistant policy for active attack conditions."
+    },
+    "action": {
+      "action": "LOCK_AUTHENTICATION",
+      "message": "Authentication temporarily locked.",
+      "execution_status": "COMMAND_READY_FOR_DOOR_CONTROLLER"
+    },
+    "observations": [
+      "Repeated authentication failures detected.",
+      "Network anomaly detected.",
+      "Threat indicator is active.",
+      "Elevated communication latency observed.",
+      "High CPU utilization observed.",
+      "High memory utilization observed."
+    ],
+    "reasoning": [
+      "Random Forest initially assessed the environment as HIGH risk.",
+      "ML risk = HIGH; HIGH confidence = 94.05%; MEDIUM confidence = 5.95%.",
+      "Critical security indicators detected: 6.",
+      "No additional escalation was required. The agent accepted the ML assessment."
+    ],
+    "context": {
+      "battery_level": 85,
+      "cpu_utilization": 90,
+      "memory_usage": 87,
+      "failed_auth_attempts": 29,
+      "successful_auth_attempts": 0,
+      "communication_latency_ms": 320,
+      "network_anomaly": 1,
+      "threat_indicator": 1
+    },
+    "event_id": "34969c5ec4d8adc5",
+    "timestamp": "2026-09-02T20:58:13+05:30"
+  },
+  {
+    "source": "WEB_UI",
+    "result": "FAILED",
+    "attempted_password": "2222",
+    "user": "UNKNOWN",
+    "failed_attempt_number": 30,
+    "ml_risk_level": "HIGH",
+    "ml_risk_confidence": {
+      "HIGH": 0.9405,
+      "LOW": 0.0,
+      "MEDIUM": 0.0595
+    },
+    "agent_risk_level": "HIGH",
+    "escalation_applied": false,
+    "escalation_reason": "No additional escalation was required. The agent accepted the ML assessment.",
+    "security_profile": {
+      "name": "HIGH",
+      "kem": "ML-KEM-1024",
+      "signature": "ML-DSA-87",
+      "description": "Stronger quantum-resistant policy for active attack conditions."
+    },
+    "action": {
+      "action": "LOCK_AUTHENTICATION",
+      "message": "Authentication temporarily locked.",
+      "execution_status": "COMMAND_READY_FOR_DOOR_CONTROLLER"
+    },
+    "observations": [
+      "Repeated authentication failures detected.",
+      "Network anomaly detected.",
+      "Threat indicator is active.",
+      "Elevated communication latency observed.",
+      "High CPU utilization observed.",
+      "High memory utilization observed."
+    ],
+    "reasoning": [
+      "Random Forest initially assessed the environment as HIGH risk.",
+      "ML risk = HIGH; HIGH confidence = 94.05%; MEDIUM confidence = 5.95%.",
+      "Critical security indicators detected: 6.",
+      "No additional escalation was required. The agent accepted the ML assessment."
+    ],
+    "context": {
+      "battery_level": 85,
+      "cpu_utilization": 90,
+      "memory_usage": 87,
+      "failed_auth_attempts": 30,
+      "successful_auth_attempts": 0,
+      "communication_latency_ms": 320,
+      "network_anomaly": 1,
+      "threat_indicator": 1
+    },
+    "event_id": "a954c236b2bdd1a9",
+    "timestamp": "2026-09-02T20:58:15+05:30"
+  },
+  {
+    "source": "WEB_UI",
+    "result": "FAILED",
+    "attempted_password": "2222",
+    "user": "UNKNOWN",
+    "failed_attempt_number": 31,
+    "ml_risk_level": "HIGH",
+    "ml_risk_confidence": {
+      "HIGH": 0.9405,
+      "LOW": 0.0,
+      "MEDIUM": 0.0595
+    },
+    "agent_risk_level": "HIGH",
+    "escalation_applied": false,
+    "escalation_reason": "No additional escalation was required. The agent accepted the ML assessment.",
+    "security_profile": {
+      "name": "HIGH",
+      "kem": "ML-KEM-1024",
+      "signature": "ML-DSA-87",
+      "description": "Stronger quantum-resistant policy for active attack conditions."
+    },
+    "action": {
+      "action": "LOCK_AUTHENTICATION",
+      "message": "Authentication temporarily locked.",
+      "execution_status": "COMMAND_READY_FOR_DOOR_CONTROLLER"
+    },
+    "observations": [
+      "Repeated authentication failures detected.",
+      "Network anomaly detected.",
+      "Threat indicator is active.",
+      "Elevated communication latency observed.",
+      "High CPU utilization observed.",
+      "High memory utilization observed."
+    ],
+    "reasoning": [
+      "Random Forest initially assessed the environment as HIGH risk.",
+      "ML risk = HIGH; HIGH confidence = 94.05%; MEDIUM confidence = 5.95%.",
+      "Critical security indicators detected: 6.",
+      "No additional escalation was required. The agent accepted the ML assessment."
+    ],
+    "context": {
+      "battery_level": 85,
+      "cpu_utilization": 90,
+      "memory_usage": 87,
+      "failed_auth_attempts": 31,
+      "successful_auth_attempts": 0,
+      "communication_latency_ms": 320,
+      "network_anomaly": 1,
+      "threat_indicator": 1
+    },
+    "event_id": "6049488fd1dc7551",
+    "timestamp": "2026-09-02T20:58:16+05:30"
+  },
+  {
+    "source": "WEB_UI",
+    "result": "SUCCESS",
+    "attempted_password": "1234",
+    "user": "DAD",
+    "ml_risk_level": "LOW",
+    "agent_risk_level": "LOW",
+    "escalation_applied": false,
+    "escalation_reason": "",
+    "security_profile": {
+      "name": "LOW",
+      "kem": "ML-KEM-512",
+      "signature": "ML-DSA-44"
+    },
+    "action": {
+      "action": "OPEN_DOOR",
+      "message": "Authorized authentication accepted. Door opened."
+    },
+    "reason": "Authorized local keyboard authentication.",
+    "event_id": "fb1f5612993dfe4c",
+    "timestamp": "2026-09-02T20:58:25+05:30"
+  },
+  {
+    "source": "WEB_UI",
+    "result": "SUCCESS",
+    "attempted_password": "5678",
+    "user": "MOM",
+    "ml_risk_level": "LOW",
+    "agent_risk_level": "LOW",
+    "escalation_applied": false,
+    "escalation_reason": "",
+    "security_profile": {
+      "name": "LOW",
+      "kem": "ML-KEM-512",
+      "signature": "ML-DSA-44"
+    },
+    "action": {
+      "action": "OPEN_DOOR",
+      "message": "Authorized authentication accepted. Door opened."
+    },
+    "reason": "Authorized local keyboard authentication.",
+    "event_id": "75817a7491683159",
+    "timestamp": "2026-09-02T20:58:31+05:30"
+  },
+  {
+    "source": "WEB_UI",
+    "result": "SUCCESS",
+    "attempted_password": "5678",
+    "user": "MOM",
+    "ml_risk_level": "LOW",
+    "agent_risk_level": "LOW",
+    "escalation_applied": false,
+    "escalation_reason": "",
+    "security_profile": {
+      "name": "LOW",
+      "kem": "ML-KEM-512",
+      "signature": "ML-DSA-44"
+    },
+    "action": {
+      "action": "OPEN_DOOR",
+      "message": "Authorized authentication accepted. Door opened."
+    },
+    "reason": "Authorized local keyboard authentication.",
+    "event_id": "4281cc11ee20efdf",
+    "timestamp": "2026-09-02T20:58:53+05:30"
+  },
+  {
+    "source": "WEB_UI",
+    "result": "FAILED",
+    "attempted_password": "2222",
+    "user": "UNKNOWN",
+    "failed_attempt_number": 32,
+    "ml_risk_level": "HIGH",
+    "ml_risk_confidence": {
+      "HIGH": 0.9405,
+      "LOW": 0.0,
+      "MEDIUM": 0.0595
+    },
+    "agent_risk_level": "HIGH",
+    "escalation_applied": false,
+    "escalation_reason": "No additional escalation was required. The agent accepted the ML assessment.",
+    "security_profile": {
+      "name": "HIGH",
+      "kem": "ML-KEM-1024",
+      "signature": "ML-DSA-87",
+      "description": "Stronger quantum-resistant policy for active attack conditions."
+    },
+    "action": {
+      "action": "LOCK_AUTHENTICATION",
+      "message": "Authentication temporarily locked.",
+      "execution_status": "COMMAND_READY_FOR_DOOR_CONTROLLER"
+    },
+    "observations": [
+      "Repeated authentication failures detected.",
+      "Network anomaly detected.",
+      "Threat indicator is active.",
+      "Elevated communication latency observed.",
+      "High CPU utilization observed.",
+      "High memory utilization observed."
+    ],
+    "reasoning": [
+      "Random Forest initially assessed the environment as HIGH risk.",
+      "ML risk = HIGH; HIGH confidence = 94.05%; MEDIUM confidence = 5.95%.",
+      "Critical security indicators detected: 6.",
+      "No additional escalation was required. The agent accepted the ML assessment."
+    ],
+    "context": {
+      "battery_level": 85,
+      "cpu_utilization": 90,
+      "memory_usage": 87,
+      "failed_auth_attempts": 32,
+      "successful_auth_attempts": 0,
+      "communication_latency_ms": 320,
+      "network_anomaly": 1,
+      "threat_indicator": 1
+    },
+    "event_id": "f7f646c77c64b168",
+    "timestamp": "2026-09-02T20:59:01+05:30"
+  },
+  {
+    "source": "WEB_UI",
+    "result": "FAILED",
+    "attempted_password": "2222",
+    "user": "UNKNOWN",
+    "failed_attempt_number": 33,
+    "ml_risk_level": "HIGH",
+    "ml_risk_confidence": {
+      "HIGH": 0.9405,
+      "LOW": 0.0,
+      "MEDIUM": 0.0595
+    },
+    "agent_risk_level": "HIGH",
+    "escalation_applied": false,
+    "escalation_reason": "No additional escalation was required. The agent accepted the ML assessment.",
+    "security_profile": {
+      "name": "HIGH",
+      "kem": "ML-KEM-1024",
+      "signature": "ML-DSA-87",
+      "description": "Stronger quantum-resistant policy for active attack conditions."
+    },
+    "action": {
+      "action": "LOCK_AUTHENTICATION",
+      "message": "Authentication temporarily locked.",
+      "execution_status": "COMMAND_READY_FOR_DOOR_CONTROLLER"
+    },
+    "observations": [
+      "Repeated authentication failures detected.",
+      "Network anomaly detected.",
+      "Threat indicator is active.",
+      "Elevated communication latency observed.",
+      "High CPU utilization observed.",
+      "High memory utilization observed."
+    ],
+    "reasoning": [
+      "Random Forest initially assessed the environment as HIGH risk.",
+      "ML risk = HIGH; HIGH confidence = 94.05%; MEDIUM confidence = 5.95%.",
+      "Critical security indicators detected: 6.",
+      "No additional escalation was required. The agent accepted the ML assessment."
+    ],
+    "context": {
+      "battery_level": 85,
+      "cpu_utilization": 90,
+      "memory_usage": 87,
+      "failed_auth_attempts": 33,
+      "successful_auth_attempts": 0,
+      "communication_latency_ms": 320,
+      "network_anomaly": 1,
+      "threat_indicator": 1
+    },
+    "event_id": "7a67296f5ca31d0a",
+    "timestamp": "2026-09-02T20:59:05+05:30"
+  },
+  {
+    "source": "WEB_UI",
+    "result": "SUCCESS",
+    "attempted_password": "5678",
+    "user": "MOM",
+    "ml_risk_level": "LOW",
+    "agent_risk_level": "LOW",
+    "escalation_applied": false,
+    "escalation_reason": "",
+    "security_profile": {
+      "name": "LOW",
+      "kem": "ML-KEM-512",
+      "signature": "ML-DSA-44"
+    },
+    "action": {
+      "action": "OPEN_DOOR",
+      "message": "Authorized authentication accepted. Door opened."
+    },
+    "reason": "Authorized local keyboard authentication.",
+    "event_id": "f1e56ae74ad4ab68",
+    "timestamp": "2026-09-02T20:59:16+05:30"
+  },
+  {
+    "source": "WEB_UI",
+    "result": "FAILED",
+    "attempted_password": "1256",
+    "user": "UNKNOWN",
+    "failed_attempt_number": 34,
+    "ml_risk_level": "HIGH",
+    "ml_risk_confidence": {
+      "HIGH": 0.9405,
+      "LOW": 0.0,
+      "MEDIUM": 0.0595
+    },
+    "agent_risk_level": "HIGH",
+    "escalation_applied": false,
+    "escalation_reason": "No additional escalation was required. The agent accepted the ML assessment.",
+    "security_profile": {
+      "name": "HIGH",
+      "kem": "ML-KEM-1024",
+      "signature": "ML-DSA-87",
+      "description": "Stronger quantum-resistant policy for active attack conditions."
+    },
+    "action": {
+      "action": "LOCK_AUTHENTICATION",
+      "message": "Authentication temporarily locked.",
+      "execution_status": "COMMAND_READY_FOR_DOOR_CONTROLLER"
+    },
+    "observations": [
+      "Repeated authentication failures detected.",
+      "Network anomaly detected.",
+      "Threat indicator is active.",
+      "Elevated communication latency observed.",
+      "High CPU utilization observed.",
+      "High memory utilization observed."
+    ],
+    "reasoning": [
+      "Random Forest initially assessed the environment as HIGH risk.",
+      "ML risk = HIGH; HIGH confidence = 94.05%; MEDIUM confidence = 5.95%.",
+      "Critical security indicators detected: 6.",
+      "No additional escalation was required. The agent accepted the ML assessment."
+    ],
+    "context": {
+      "battery_level": 85,
+      "cpu_utilization": 90,
+      "memory_usage": 87,
+      "failed_auth_attempts": 34,
+      "successful_auth_attempts": 0,
+      "communication_latency_ms": 320,
+      "network_anomaly": 1,
+      "threat_indicator": 1
+    },
+    "event_id": "bdfab0afb31697d5",
+    "timestamp": "2026-09-02T20:59:28+05:30"
+  },
+  {
+    "source": "WEB_UI",
+    "result": "FAILED",
+    "attempted_password": "6852",
+    "user": "UNKNOWN",
+    "failed_attempt_number": 35,
+    "ml_risk_level": "HIGH",
+    "ml_risk_confidence": {
+      "HIGH": 0.9405,
+      "LOW": 0.0,
+      "MEDIUM": 0.0595
+    },
+    "agent_risk_level": "HIGH",
+    "escalation_applied": false,
+    "escalation_reason": "No additional escalation was required. The agent accepted the ML assessment.",
+    "security_profile": {
+      "name": "HIGH",
+      "kem": "ML-KEM-1024",
+      "signature": "ML-DSA-87",
+      "description": "Stronger quantum-resistant policy for active attack conditions."
+    },
+    "action": {
+      "action": "LOCK_AUTHENTICATION",
+      "message": "Authentication temporarily locked.",
+      "execution_status": "COMMAND_READY_FOR_DOOR_CONTROLLER"
+    },
+    "observations": [
+      "Repeated authentication failures detected.",
+      "Network anomaly detected.",
+      "Threat indicator is active.",
+      "Elevated communication latency observed.",
+      "High CPU utilization observed.",
+      "High memory utilization observed."
+    ],
+    "reasoning": [
+      "Random Forest initially assessed the environment as HIGH risk.",
+      "ML risk = HIGH; HIGH confidence = 94.05%; MEDIUM confidence = 5.95%.",
+      "Critical security indicators detected: 6.",
+      "No additional escalation was required. The agent accepted the ML assessment."
+    ],
+    "context": {
+      "battery_level": 85,
+      "cpu_utilization": 90,
+      "memory_usage": 87,
+      "failed_auth_attempts": 35,
+      "successful_auth_attempts": 0,
+      "communication_latency_ms": 320,
+      "network_anomaly": 1,
+      "threat_indicator": 1
+    },
+    "event_id": "f7d31342732820a6",
+    "timestamp": "2026-09-02T20:59:39+05:30"
+  },
+  {
+    "source": "WEB_UI",
+    "result": "FAILED",
+    "attempted_password": "5369",
+    "user": "UNKNOWN",
+    "failed_attempt_number": 36,
+    "ml_risk_level": "HIGH",
+    "ml_risk_confidence": {
+      "HIGH": 0.9405,
+      "LOW": 0.0,
+      "MEDIUM": 0.0595
+    },
+    "agent_risk_level": "HIGH",
+    "escalation_applied": false,
+    "escalation_reason": "No additional escalation was required. The agent accepted the ML assessment.",
+    "security_profile": {
+      "name": "HIGH",
+      "kem": "ML-KEM-1024",
+      "signature": "ML-DSA-87",
+      "description": "Stronger quantum-resistant policy for active attack conditions."
+    },
+    "action": {
+      "action": "LOCK_AUTHENTICATION",
+      "message": "Authentication temporarily locked.",
+      "execution_status": "COMMAND_READY_FOR_DOOR_CONTROLLER"
+    },
+    "observations": [
+      "Repeated authentication failures detected.",
+      "Network anomaly detected.",
+      "Threat indicator is active.",
+      "Elevated communication latency observed.",
+      "High CPU utilization observed.",
+      "High memory utilization observed."
+    ],
+    "reasoning": [
+      "Random Forest initially assessed the environment as HIGH risk.",
+      "ML risk = HIGH; HIGH confidence = 94.05%; MEDIUM confidence = 5.95%.",
+      "Critical security indicators detected: 6.",
+      "No additional escalation was required. The agent accepted the ML assessment."
+    ],
+    "context": {
+      "battery_level": 85,
+      "cpu_utilization": 90,
+      "memory_usage": 87,
+      "failed_auth_attempts": 36,
+      "successful_auth_attempts": 0,
+      "communication_latency_ms": 320,
+      "network_anomaly": 1,
+      "threat_indicator": 1
+    },
+    "event_id": "39f2d40570bc6ca2",
+    "timestamp": "2026-09-02T20:59:48+05:30"
+  },
+  {
+    "source": "WEB_UI",
+    "result": "FAILED",
+    "attempted_password": "0825",
+    "user": "UNKNOWN",
+    "failed_attempt_number": 37,
+    "ml_risk_level": "HIGH",
+    "ml_risk_confidence": {
+      "HIGH": 0.9405,
+      "LOW": 0.0,
+      "MEDIUM": 0.0595
+    },
+    "agent_risk_level": "HIGH",
+    "escalation_applied": false,
+    "escalation_reason": "No additional escalation was required. The agent accepted the ML assessment.",
+    "security_profile": {
+      "name": "HIGH",
+      "kem": "ML-KEM-1024",
+      "signature": "ML-DSA-87",
+      "description": "Stronger quantum-resistant policy for active attack conditions."
+    },
+    "action": {
+      "action": "LOCK_AUTHENTICATION",
+      "message": "Authentication temporarily locked.",
+      "execution_status": "COMMAND_READY_FOR_DOOR_CONTROLLER"
+    },
+    "observations": [
+      "Repeated authentication failures detected.",
+      "Network anomaly detected.",
+      "Threat indicator is active.",
+      "Elevated communication latency observed.",
+      "High CPU utilization observed.",
+      "High memory utilization observed."
+    ],
+    "reasoning": [
+      "Random Forest initially assessed the environment as HIGH risk.",
+      "ML risk = HIGH; HIGH confidence = 94.05%; MEDIUM confidence = 5.95%.",
+      "Critical security indicators detected: 6.",
+      "No additional escalation was required. The agent accepted the ML assessment."
+    ],
+    "context": {
+      "battery_level": 85,
+      "cpu_utilization": 90,
+      "memory_usage": 87,
+      "failed_auth_attempts": 37,
+      "successful_auth_attempts": 0,
+      "communication_latency_ms": 320,
+      "network_anomaly": 1,
+      "threat_indicator": 1
+    },
+    "event_id": "233939a4ec4d2dcf",
+    "timestamp": "2026-09-02T20:59:58+05:30"
+  },
+  {
+    "source": "WEB_UI",
+    "result": "FAILED",
+    "attempted_password": "9999",
+    "user": "UNKNOWN",
+    "failed_attempt_number": 38,
+    "ml_risk_level": "HIGH",
+    "ml_risk_confidence": {
+      "HIGH": 0.9405,
+      "LOW": 0.0,
+      "MEDIUM": 0.0595
+    },
+    "agent_risk_level": "HIGH",
+    "escalation_applied": false,
+    "escalation_reason": "No additional escalation was required. The agent accepted the ML assessment.",
+    "security_profile": {
+      "name": "HIGH",
+      "kem": "ML-KEM-1024",
+      "signature": "ML-DSA-87",
+      "description": "Stronger quantum-resistant policy for active attack conditions."
+    },
+    "action": {
+      "action": "LOCK_AUTHENTICATION",
+      "message": "Authentication temporarily locked.",
+      "execution_status": "COMMAND_READY_FOR_DOOR_CONTROLLER"
+    },
+    "observations": [
+      "Repeated authentication failures detected.",
+      "Network anomaly detected.",
+      "Threat indicator is active.",
+      "Elevated communication latency observed.",
+      "High CPU utilization observed.",
+      "High memory utilization observed."
+    ],
+    "reasoning": [
+      "Random Forest initially assessed the environment as HIGH risk.",
+      "ML risk = HIGH; HIGH confidence = 94.05%; MEDIUM confidence = 5.95%.",
+      "Critical security indicators detected: 6.",
+      "No additional escalation was required. The agent accepted the ML assessment."
+    ],
+    "context": {
+      "battery_level": 85,
+      "cpu_utilization": 90,
+      "memory_usage": 87,
+      "failed_auth_attempts": 38,
+      "successful_auth_attempts": 0,
+      "communication_latency_ms": 320,
+      "network_anomaly": 1,
+      "threat_indicator": 1
+    },
+    "event_id": "dc42d4790c85246e",
+    "timestamp": "2026-09-02T21:00:07+05:30"
+  },
+  {
+    "source": "WEB_UI",
+    "result": "FAILED",
+    "attempted_password": "9999",
+    "user": "UNKNOWN",
+    "failed_attempt_number": 39,
+    "ml_risk_level": "HIGH",
+    "ml_risk_confidence": {
+      "HIGH": 0.9405,
+      "LOW": 0.0,
+      "MEDIUM": 0.0595
+    },
+    "agent_risk_level": "HIGH",
+    "escalation_applied": false,
+    "escalation_reason": "No additional escalation was required. The agent accepted the ML assessment.",
+    "security_profile": {
+      "name": "HIGH",
+      "kem": "ML-KEM-1024",
+      "signature": "ML-DSA-87",
+      "description": "Stronger quantum-resistant policy for active attack conditions."
+    },
+    "action": {
+      "action": "LOCK_AUTHENTICATION",
+      "message": "Authentication temporarily locked.",
+      "execution_status": "COMMAND_READY_FOR_DOOR_CONTROLLER"
+    },
+    "observations": [
+      "Repeated authentication failures detected.",
+      "Network anomaly detected.",
+      "Threat indicator is active.",
+      "Elevated communication latency observed.",
+      "High CPU utilization observed.",
+      "High memory utilization observed."
+    ],
+    "reasoning": [
+      "Random Forest initially assessed the environment as HIGH risk.",
+      "ML risk = HIGH; HIGH confidence = 94.05%; MEDIUM confidence = 5.95%.",
+      "Critical security indicators detected: 6.",
+      "No additional escalation was required. The agent accepted the ML assessment."
+    ],
+    "context": {
+      "battery_level": 85,
+      "cpu_utilization": 90,
+      "memory_usage": 87,
+      "failed_auth_attempts": 39,
+      "successful_auth_attempts": 0,
+      "communication_latency_ms": 320,
+      "network_anomaly": 1,
+      "threat_indicator": 1
+    },
+    "event_id": "9df72b239f337d07",
+    "timestamp": "2026-09-02T21:00:08+05:30"
+  },
+  {
+    "source": "WEB_UI",
+    "result": "FAILED",
+    "attempted_password": "9999",
+    "user": "UNKNOWN",
+    "failed_attempt_number": 40,
+    "ml_risk_level": "HIGH",
+    "ml_risk_confidence": {
+      "HIGH": 0.9405,
+      "LOW": 0.0,
+      "MEDIUM": 0.0595
+    },
+    "agent_risk_level": "HIGH",
+    "escalation_applied": false,
+    "escalation_reason": "No additional escalation was required. The agent accepted the ML assessment.",
+    "security_profile": {
+      "name": "HIGH",
+      "kem": "ML-KEM-1024",
+      "signature": "ML-DSA-87",
+      "description": "Stronger quantum-resistant policy for active attack conditions."
+    },
+    "action": {
+      "action": "LOCK_AUTHENTICATION",
+      "message": "Authentication temporarily locked.",
+      "execution_status": "COMMAND_READY_FOR_DOOR_CONTROLLER"
+    },
+    "observations": [
+      "Repeated authentication failures detected.",
+      "Network anomaly detected.",
+      "Threat indicator is active.",
+      "Elevated communication latency observed.",
+      "High CPU utilization observed.",
+      "High memory utilization observed."
+    ],
+    "reasoning": [
+      "Random Forest initially assessed the environment as HIGH risk.",
+      "ML risk = HIGH; HIGH confidence = 94.05%; MEDIUM confidence = 5.95%.",
+      "Critical security indicators detected: 6.",
+      "No additional escalation was required. The agent accepted the ML assessment."
+    ],
+    "context": {
+      "battery_level": 85,
+      "cpu_utilization": 90,
+      "memory_usage": 87,
+      "failed_auth_attempts": 40,
+      "successful_auth_attempts": 0,
+      "communication_latency_ms": 320,
+      "network_anomaly": 1,
+      "threat_indicator": 1
+    },
+    "event_id": "1e318c3121ea445f",
+    "timestamp": "2026-09-02T21:00:09+05:30"
+  },
+  {
+    "source": "WEB_UI",
+    "result": "FAILED",
+    "attempted_password": "9999",
+    "user": "UNKNOWN",
+    "failed_attempt_number": 40,
+    "ml_risk_level": "HIGH",
+    "ml_risk_confidence": {
+      "HIGH": 0.9405,
+      "LOW": 0.0,
+      "MEDIUM": 0.0595
+    },
+    "agent_risk_level": "HIGH",
+    "escalation_applied": false,
+    "escalation_reason": "No additional escalation was required. The agent accepted the ML assessment.",
+    "security_profile": {
+      "name": "HIGH",
+      "kem": "ML-KEM-1024",
+      "signature": "ML-DSA-87",
+      "description": "Stronger quantum-resistant policy for active attack conditions."
+    },
+    "action": {
+      "action": "LOCK_AUTHENTICATION",
+      "message": "Authentication temporarily locked.",
+      "execution_status": "COMMAND_READY_FOR_DOOR_CONTROLLER"
+    },
+    "observations": [
+      "Repeated authentication failures detected.",
+      "Network anomaly detected.",
+      "Threat indicator is active.",
+      "Elevated communication latency observed.",
+      "High CPU utilization observed.",
+      "High memory utilization observed."
+    ],
+    "reasoning": [
+      "Random Forest initially assessed the environment as HIGH risk.",
+      "ML risk = HIGH; HIGH confidence = 94.05%; MEDIUM confidence = 5.95%.",
+      "Critical security indicators detected: 6.",
+      "No additional escalation was required. The agent accepted the ML assessment."
+    ],
+    "context": {
+      "battery_level": 85,
+      "cpu_utilization": 90,
+      "memory_usage": 87,
+      "failed_auth_attempts": 40,
+      "successful_auth_attempts": 0,
+      "communication_latency_ms": 320,
+      "network_anomaly": 1,
+      "threat_indicator": 1
+    },
+    "event_id": "1daeaaedc76b98a6",
+    "timestamp": "2026-09-02T21:00:09+05:30"
+  },
+  {
+    "source": "WEB_UI",
+    "result": "SUCCESS",
+    "attempted_password": "5678",
+    "user": "MOM",
+    "ml_risk_level": "LOW",
+    "agent_risk_level": "LOW",
+    "escalation_applied": false,
+    "escalation_reason": "",
+    "security_profile": {
+      "name": "LOW",
+      "kem": "ML-KEM-512",
+      "signature": "ML-DSA-44"
+    },
+    "action": {
+      "action": "OPEN_DOOR",
+      "message": "Authorized authentication accepted. Door opened."
+    },
+    "reason": "Authorized local keyboard authentication.",
+    "event_id": "8563c02fa31e5bc7",
+    "timestamp": "2026-09-02T21:00:23+05:30"
+  },
+  {
+    "source": "WEB_UI",
+    "result": "SUCCESS",
+    "attempted_password": "1234",
+    "user": "DAD",
+    "ml_risk_level": "LOW",
+    "agent_risk_level": "LOW",
+    "escalation_applied": false,
+    "escalation_reason": "",
+    "security_profile": {
+      "name": "LOW",
+      "kem": "ML-KEM-512",
+      "signature": "ML-DSA-44"
+    },
+    "action": {
+      "action": "OPEN_DOOR",
+      "message": "Authorized authentication accepted. Door opened."
+    },
+    "reason": "Authorized local keyboard authentication.",
+    "event_id": "d51ac11dcad677f9",
+    "timestamp": "2026-09-02T21:01:20+05:30"
+  },
+  {
+    "source": "WEB_UI",
+    "result": "FAILED",
+    "attempted_password": "4852",
+    "user": "UNKNOWN",
+    "failed_attempt_number": 42,
+    "ml_risk_level": "HIGH",
+    "ml_risk_confidence": {
+      "HIGH": 0.9405,
+      "LOW": 0.0,
+      "MEDIUM": 0.0595
+    },
+    "agent_risk_level": "HIGH",
+    "escalation_applied": false,
+    "escalation_reason": "No additional escalation was required. The agent accepted the ML assessment.",
+    "security_profile": {
+      "name": "HIGH",
+      "kem": "ML-KEM-1024",
+      "signature": "ML-DSA-87",
+      "description": "Stronger quantum-resistant policy for active attack conditions."
+    },
+    "action": {
+      "action": "LOCK_AUTHENTICATION",
+      "message": "Authentication temporarily locked.",
+      "execution_status": "COMMAND_READY_FOR_DOOR_CONTROLLER"
+    },
+    "observations": [
+      "Repeated authentication failures detected.",
+      "Network anomaly detected.",
+      "Threat indicator is active.",
+      "Elevated communication latency observed.",
+      "High CPU utilization observed.",
+      "High memory utilization observed."
+    ],
+    "reasoning": [
+      "Random Forest initially assessed the environment as HIGH risk.",
+      "ML risk = HIGH; HIGH confidence = 94.05%; MEDIUM confidence = 5.95%.",
+      "Critical security indicators detected: 6.",
+      "No additional escalation was required. The agent accepted the ML assessment."
+    ],
+    "context": {
+      "battery_level": 85,
+      "cpu_utilization": 90,
+      "memory_usage": 87,
+      "failed_auth_attempts": 42,
+      "successful_auth_attempts": 0,
+      "communication_latency_ms": 320,
+      "network_anomaly": 1,
+      "threat_indicator": 1
+    },
+    "event_id": "24a3639365a23ca5",
+    "timestamp": "2026-09-02T21:01:26+05:30"
+  },
+  {
+    "source": "WEB_UI",
+    "result": "FAILED",
+    "attempted_password": "2222",
+    "user": "UNKNOWN",
+    "failed_attempt_number": 43,
+    "ml_risk_level": "HIGH",
+    "ml_risk_confidence": {
+      "HIGH": 0.9405,
+      "LOW": 0.0,
+      "MEDIUM": 0.0595
+    },
+    "agent_risk_level": "HIGH",
+    "escalation_applied": false,
+    "escalation_reason": "No additional escalation was required. The agent accepted the ML assessment.",
+    "security_profile": {
+      "name": "HIGH",
+      "kem": "ML-KEM-1024",
+      "signature": "ML-DSA-87",
+      "description": "Stronger quantum-resistant policy for active attack conditions."
+    },
+    "action": {
+      "action": "LOCK_AUTHENTICATION",
+      "message": "Authentication temporarily locked.",
+      "execution_status": "COMMAND_READY_FOR_DOOR_CONTROLLER"
+    },
+    "observations": [
+      "Repeated authentication failures detected.",
+      "Network anomaly detected.",
+      "Threat indicator is active.",
+      "Elevated communication latency observed.",
+      "High CPU utilization observed.",
+      "High memory utilization observed."
+    ],
+    "reasoning": [
+      "Random Forest initially assessed the environment as HIGH risk.",
+      "ML risk = HIGH; HIGH confidence = 94.05%; MEDIUM confidence = 5.95%.",
+      "Critical security indicators detected: 6.",
+      "No additional escalation was required. The agent accepted the ML assessment."
+    ],
+    "context": {
+      "battery_level": 85,
+      "cpu_utilization": 90,
+      "memory_usage": 87,
+      "failed_auth_attempts": 43,
+      "successful_auth_attempts": 0,
+      "communication_latency_ms": 320,
+      "network_anomaly": 1,
+      "threat_indicator": 1
+    },
+    "event_id": "d27b5bceaf837f64",
+    "timestamp": "2026-09-02T21:10:51+05:30"
+  },
+  {
+    "source": "WEB_UI",
+    "result": "FAILED",
+    "attempted_password": "2222",
+    "user": "UNKNOWN",
+    "failed_attempt_number": 44,
+    "ml_risk_level": "HIGH",
+    "ml_risk_confidence": {
+      "HIGH": 0.9405,
+      "LOW": 0.0,
+      "MEDIUM": 0.0595
+    },
+    "agent_risk_level": "HIGH",
+    "escalation_applied": false,
+    "escalation_reason": "No additional escalation was required. The agent accepted the ML assessment.",
+    "security_profile": {
+      "name": "HIGH",
+      "kem": "ML-KEM-1024",
+      "signature": "ML-DSA-87",
+      "description": "Stronger quantum-resistant policy for active attack conditions."
+    },
+    "action": {
+      "action": "LOCK_AUTHENTICATION",
+      "message": "Authentication temporarily locked.",
+      "execution_status": "COMMAND_READY_FOR_DOOR_CONTROLLER"
+    },
+    "observations": [
+      "Repeated authentication failures detected.",
+      "Network anomaly detected.",
+      "Threat indicator is active.",
+      "Elevated communication latency observed.",
+      "High CPU utilization observed.",
+      "High memory utilization observed."
+    ],
+    "reasoning": [
+      "Random Forest initially assessed the environment as HIGH risk.",
+      "ML risk = HIGH; HIGH confidence = 94.05%; MEDIUM confidence = 5.95%.",
+      "Critical security indicators detected: 6.",
+      "No additional escalation was required. The agent accepted the ML assessment."
+    ],
+    "context": {
+      "battery_level": 85,
+      "cpu_utilization": 90,
+      "memory_usage": 87,
+      "failed_auth_attempts": 44,
+      "successful_auth_attempts": 0,
+      "communication_latency_ms": 320,
+      "network_anomaly": 1,
+      "threat_indicator": 1
+    },
+    "event_id": "54c443f96bfdfddd",
+    "timestamp": "2026-09-02T21:10:52+05:30"
+  },
+  {
+    "source": "WEB_UI",
+    "result": "FAILED",
+    "attempted_password": "2222",
+    "user": "UNKNOWN",
+    "failed_attempt_number": 45,
+    "ml_risk_level": "HIGH",
+    "ml_risk_confidence": {
+      "HIGH": 0.9405,
+      "LOW": 0.0,
+      "MEDIUM": 0.0595
+    },
+    "agent_risk_level": "HIGH",
+    "escalation_applied": false,
+    "escalation_reason": "No additional escalation was required. The agent accepted the ML assessment.",
+    "security_profile": {
+      "name": "HIGH",
+      "kem": "ML-KEM-1024",
+      "signature": "ML-DSA-87",
+      "description": "Stronger quantum-resistant policy for active attack conditions."
+    },
+    "action": {
+      "action": "LOCK_AUTHENTICATION",
+      "message": "Authentication temporarily locked.",
+      "execution_status": "COMMAND_READY_FOR_DOOR_CONTROLLER"
+    },
+    "observations": [
+      "Repeated authentication failures detected.",
+      "Network anomaly detected.",
+      "Threat indicator is active.",
+      "Elevated communication latency observed.",
+      "High CPU utilization observed.",
+      "High memory utilization observed."
+    ],
+    "reasoning": [
+      "Random Forest initially assessed the environment as HIGH risk.",
+      "ML risk = HIGH; HIGH confidence = 94.05%; MEDIUM confidence = 5.95%.",
+      "Critical security indicators detected: 6.",
+      "No additional escalation was required. The agent accepted the ML assessment."
+    ],
+    "context": {
+      "battery_level": 85,
+      "cpu_utilization": 90,
+      "memory_usage": 87,
+      "failed_auth_attempts": 45,
+      "successful_auth_attempts": 0,
+      "communication_latency_ms": 320,
+      "network_anomaly": 1,
+      "threat_indicator": 1
+    },
+    "event_id": "8fd5c01fb53927b6",
+    "timestamp": "2026-09-02T21:10:52+05:30"
+  },
+  {
+    "source": "WEB_UI",
+    "result": "FAILED",
+    "attempted_password": "2222",
+    "user": "UNKNOWN",
+    "failed_attempt_number": 46,
+    "ml_risk_level": "HIGH",
+    "ml_risk_confidence": {
+      "HIGH": 0.9405,
+      "LOW": 0.0,
+      "MEDIUM": 0.0595
+    },
+    "agent_risk_level": "HIGH",
+    "escalation_applied": false,
+    "escalation_reason": "No additional escalation was required. The agent accepted the ML assessment.",
+    "security_profile": {
+      "name": "HIGH",
+      "kem": "ML-KEM-1024",
+      "signature": "ML-DSA-87",
+      "description": "Stronger quantum-resistant policy for active attack conditions."
+    },
+    "action": {
+      "action": "LOCK_AUTHENTICATION",
+      "message": "Authentication temporarily locked.",
+      "execution_status": "COMMAND_READY_FOR_DOOR_CONTROLLER"
+    },
+    "observations": [
+      "Repeated authentication failures detected.",
+      "Network anomaly detected.",
+      "Threat indicator is active.",
+      "Elevated communication latency observed.",
+      "High CPU utilization observed.",
+      "High memory utilization observed."
+    ],
+    "reasoning": [
+      "Random Forest initially assessed the environment as HIGH risk.",
+      "ML risk = HIGH; HIGH confidence = 94.05%; MEDIUM confidence = 5.95%.",
+      "Critical security indicators detected: 6.",
+      "No additional escalation was required. The agent accepted the ML assessment."
+    ],
+    "context": {
+      "battery_level": 85,
+      "cpu_utilization": 90,
+      "memory_usage": 87,
+      "failed_auth_attempts": 46,
+      "successful_auth_attempts": 0,
+      "communication_latency_ms": 320,
+      "network_anomaly": 1,
+      "threat_indicator": 1
+    },
+    "event_id": "7a87210d5f5343b8",
+    "timestamp": "2026-09-02T21:10:53+05:30"
+  },
+  {
+    "source": "WEB_UI",
+    "result": "FAILED",
+    "attempted_password": "2222",
+    "user": "UNKNOWN",
+    "failed_attempt_number": 47,
+    "ml_risk_level": "HIGH",
+    "ml_risk_confidence": {
+      "HIGH": 0.9405,
+      "LOW": 0.0,
+      "MEDIUM": 0.0595
+    },
+    "agent_risk_level": "HIGH",
+    "escalation_applied": false,
+    "escalation_reason": "No additional escalation was required. The agent accepted the ML assessment.",
+    "security_profile": {
+      "name": "HIGH",
+      "kem": "ML-KEM-1024",
+      "signature": "ML-DSA-87",
+      "description": "Stronger quantum-resistant policy for active attack conditions."
+    },
+    "action": {
+      "action": "LOCK_AUTHENTICATION",
+      "message": "Authentication temporarily locked.",
+      "execution_status": "COMMAND_READY_FOR_DOOR_CONTROLLER"
+    },
+    "observations": [
+      "Repeated authentication failures detected.",
+      "Network anomaly detected.",
+      "Threat indicator is active.",
+      "Elevated communication latency observed.",
+      "High CPU utilization observed.",
+      "High memory utilization observed."
+    ],
+    "reasoning": [
+      "Random Forest initially assessed the environment as HIGH risk.",
+      "ML risk = HIGH; HIGH confidence = 94.05%; MEDIUM confidence = 5.95%.",
+      "Critical security indicators detected: 6.",
+      "No additional escalation was required. The agent accepted the ML assessment."
+    ],
+    "context": {
+      "battery_level": 85,
+      "cpu_utilization": 90,
+      "memory_usage": 87,
+      "failed_auth_attempts": 47,
+      "successful_auth_attempts": 0,
+      "communication_latency_ms": 320,
+      "network_anomaly": 1,
+      "threat_indicator": 1
+    },
+    "event_id": "845bba4ca51da229",
+    "timestamp": "2026-09-02T21:10:54+05:30"
+  },
+  {
+    "source": "WEB_UI",
+    "result": "FAILED",
+    "attempted_password": "2222",
+    "user": "UNKNOWN",
+    "failed_attempt_number": 48,
+    "ml_risk_level": "HIGH",
+    "ml_risk_confidence": {
+      "HIGH": 0.9405,
+      "LOW": 0.0,
+      "MEDIUM": 0.0595
+    },
+    "agent_risk_level": "HIGH",
+    "escalation_applied": false,
+    "escalation_reason": "No additional escalation was required. The agent accepted the ML assessment.",
+    "security_profile": {
+      "name": "HIGH",
+      "kem": "ML-KEM-1024",
+      "signature": "ML-DSA-87",
+      "description": "Stronger quantum-resistant policy for active attack conditions."
+    },
+    "action": {
+      "action": "LOCK_AUTHENTICATION",
+      "message": "Authentication temporarily locked.",
+      "execution_status": "COMMAND_READY_FOR_DOOR_CONTROLLER"
+    },
+    "observations": [
+      "Repeated authentication failures detected.",
+      "Network anomaly detected.",
+      "Threat indicator is active.",
+      "Elevated communication latency observed.",
+      "High CPU utilization observed.",
+      "High memory utilization observed."
+    ],
+    "reasoning": [
+      "Random Forest initially assessed the environment as HIGH risk.",
+      "ML risk = HIGH; HIGH confidence = 94.05%; MEDIUM confidence = 5.95%.",
+      "Critical security indicators detected: 6.",
+      "No additional escalation was required. The agent accepted the ML assessment."
+    ],
+    "context": {
+      "battery_level": 85,
+      "cpu_utilization": 90,
+      "memory_usage": 87,
+      "failed_auth_attempts": 48,
+      "successful_auth_attempts": 0,
+      "communication_latency_ms": 320,
+      "network_anomaly": 1,
+      "threat_indicator": 1
+    },
+    "event_id": "82e02a03ccf038ce",
+    "timestamp": "2026-09-02T21:10:55+05:30"
+  },
+  {
+    "source": "WEB_UI",
+    "result": "FAILED",
+    "attempted_password": "2111",
+    "user": "UNKNOWN",
+    "failed_attempt_number": 49,
+    "ml_risk_level": "HIGH",
+    "ml_risk_confidence": {
+      "HIGH": 0.9405,
+      "LOW": 0.0,
+      "MEDIUM": 0.0595
+    },
+    "agent_risk_level": "HIGH",
+    "escalation_applied": false,
+    "escalation_reason": "No additional escalation was required. The agent accepted the ML assessment.",
+    "security_profile": {
+      "name": "HIGH",
+      "kem": "ML-KEM-1024",
+      "signature": "ML-DSA-87",
+      "description": "Stronger quantum-resistant policy for active attack conditions."
+    },
+    "action": {
+      "action": "LOCK_AUTHENTICATION",
+      "message": "Authentication temporarily locked.",
+      "execution_status": "COMMAND_READY_FOR_DOOR_CONTROLLER"
+    },
+    "observations": [
+      "Repeated authentication failures detected.",
+      "Network anomaly detected.",
+      "Threat indicator is active.",
+      "Elevated communication latency observed.",
+      "High CPU utilization observed.",
+      "High memory utilization observed."
+    ],
+    "reasoning": [
+      "Random Forest initially assessed the environment as HIGH risk.",
+      "ML risk = HIGH; HIGH confidence = 94.05%; MEDIUM confidence = 5.95%.",
+      "Critical security indicators detected: 6.",
+      "No additional escalation was required. The agent accepted the ML assessment."
+    ],
+    "context": {
+      "battery_level": 85,
+      "cpu_utilization": 90,
+      "memory_usage": 87,
+      "failed_auth_attempts": 49,
+      "successful_auth_attempts": 0,
+      "communication_latency_ms": 320,
+      "network_anomaly": 1,
+      "threat_indicator": 1
+    },
+    "event_id": "d2efa45d5d34928b",
+    "timestamp": "2026-09-02T21:10:57+05:30"
+  },
+  {
+    "source": "WEB_UI",
+    "result": "SUCCESS",
+    "attempted_password": "1234",
+    "user": "DAD",
+    "ml_risk_level": "LOW",
+    "agent_risk_level": "LOW",
+    "escalation_applied": false,
+    "escalation_reason": "",
+    "security_profile": {
+      "name": "LOW",
+      "kem": "ML-KEM-512",
+      "signature": "ML-DSA-44"
+    },
+    "action": {
+      "action": "OPEN_DOOR",
+      "message": "Authorized authentication accepted. Door opened."
+    },
+    "reason": "Authorized local keyboard authentication.",
+    "event_id": "829e5c6e63cfb364",
+    "timestamp": "2026-09-02T21:11:01+05:30"
+  },
+  {
+    "source": "WEB_UI",
+    "result": "FAILED",
+    "attempted_password": "1255",
+    "user": "UNKNOWN",
+    "failed_attempt_number": 50,
+    "ml_risk_level": "HIGH",
+    "ml_risk_confidence": {
+      "HIGH": 0.9405,
+      "LOW": 0.0,
+      "MEDIUM": 0.0595
+    },
+    "agent_risk_level": "HIGH",
+    "escalation_applied": false,
+    "escalation_reason": "No additional escalation was required. The agent accepted the ML assessment.",
+    "security_profile": {
+      "name": "HIGH",
+      "kem": "ML-KEM-1024",
+      "signature": "ML-DSA-87",
+      "description": "Stronger quantum-resistant policy for active attack conditions."
+    },
+    "action": {
+      "action": "LOCK_AUTHENTICATION",
+      "message": "Authentication temporarily locked.",
+      "execution_status": "COMMAND_READY_FOR_DOOR_CONTROLLER"
+    },
+    "observations": [
+      "Repeated authentication failures detected.",
+      "Network anomaly detected.",
+      "Threat indicator is active.",
+      "Elevated communication latency observed.",
+      "High CPU utilization observed.",
+      "High memory utilization observed."
+    ],
+    "reasoning": [
+      "Random Forest initially assessed the environment as HIGH risk.",
+      "ML risk = HIGH; HIGH confidence = 94.05%; MEDIUM confidence = 5.95%.",
+      "Critical security indicators detected: 6.",
+      "No additional escalation was required. The agent accepted the ML assessment."
+    ],
+    "context": {
+      "battery_level": 85,
+      "cpu_utilization": 90,
+      "memory_usage": 87,
+      "failed_auth_attempts": 50,
+      "successful_auth_attempts": 0,
+      "communication_latency_ms": 320,
+      "network_anomaly": 1,
+      "threat_indicator": 1
+    },
+    "event_id": "a30d0d43fd270b11",
+    "timestamp": "2026-09-02T21:11:10+05:30"
+  },
+  {
+    "source": "WEB_UI",
+    "result": "FAILED",
+    "attempted_password": "0000",
+    "user": "UNKNOWN",
+    "failed_attempt_number": 51,
+    "ml_risk_level": "HIGH",
+    "ml_risk_confidence": {
+      "HIGH": 0.9405,
+      "LOW": 0.0,
+      "MEDIUM": 0.0595
+    },
+    "agent_risk_level": "HIGH",
+    "escalation_applied": false,
+    "escalation_reason": "No additional escalation was required. The agent accepted the ML assessment.",
+    "security_profile": {
+      "name": "HIGH",
+      "kem": "ML-KEM-1024",
+      "signature": "ML-DSA-87",
+      "description": "Stronger quantum-resistant policy for active attack conditions."
+    },
+    "action": {
+      "action": "LOCK_AUTHENTICATION",
+      "message": "Authentication temporarily locked.",
+      "execution_status": "COMMAND_READY_FOR_DOOR_CONTROLLER"
+    },
+    "observations": [
+      "Repeated authentication failures detected.",
+      "Network anomaly detected.",
+      "Threat indicator is active.",
+      "Elevated communication latency observed.",
+      "High CPU utilization observed.",
+      "High memory utilization observed."
+    ],
+    "reasoning": [
+      "Random Forest initially assessed the environment as HIGH risk.",
+      "ML risk = HIGH; HIGH confidence = 94.05%; MEDIUM confidence = 5.95%.",
+      "Critical security indicators detected: 6.",
+      "No additional escalation was required. The agent accepted the ML assessment."
+    ],
+    "context": {
+      "battery_level": 85,
+      "cpu_utilization": 90,
+      "memory_usage": 87,
+      "failed_auth_attempts": 51,
+      "successful_auth_attempts": 0,
+      "communication_latency_ms": 320,
+      "network_anomaly": 1,
+      "threat_indicator": 1
+    },
+    "event_id": "5993a81c4c9d8a04",
+    "timestamp": "2026-09-02T21:11:14+05:30"
+  },
+  {
+    "source": "WEB_UI",
+    "result": "FAILED",
+    "attempted_password": "0000",
+    "user": "UNKNOWN",
+    "failed_attempt_number": 52,
+    "ml_risk_level": "HIGH",
+    "ml_risk_confidence": {
+      "HIGH": 0.9405,
+      "LOW": 0.0,
+      "MEDIUM": 0.0595
+    },
+    "agent_risk_level": "HIGH",
+    "escalation_applied": false,
+    "escalation_reason": "No additional escalation was required. The agent accepted the ML assessment.",
+    "security_profile": {
+      "name": "HIGH",
+      "kem": "ML-KEM-1024",
+      "signature": "ML-DSA-87",
+      "description": "Stronger quantum-resistant policy for active attack conditions."
+    },
+    "action": {
+      "action": "LOCK_AUTHENTICATION",
+      "message": "Authentication temporarily locked.",
+      "execution_status": "COMMAND_READY_FOR_DOOR_CONTROLLER"
+    },
+    "observations": [
+      "Repeated authentication failures detected.",
+      "Network anomaly detected.",
+      "Threat indicator is active.",
+      "Elevated communication latency observed.",
+      "High CPU utilization observed.",
+      "High memory utilization observed."
+    ],
+    "reasoning": [
+      "Random Forest initially assessed the environment as HIGH risk.",
+      "ML risk = HIGH; HIGH confidence = 94.05%; MEDIUM confidence = 5.95%.",
+      "Critical security indicators detected: 6.",
+      "No additional escalation was required. The agent accepted the ML assessment."
+    ],
+    "context": {
+      "battery_level": 85,
+      "cpu_utilization": 90,
+      "memory_usage": 87,
+      "failed_auth_attempts": 52,
+      "successful_auth_attempts": 0,
+      "communication_latency_ms": 320,
+      "network_anomaly": 1,
+      "threat_indicator": 1
+    },
+    "event_id": "335be84425592a7d",
+    "timestamp": "2026-09-02T21:11:14+05:30"
+  },
+  {
+    "source": "WEB_UI",
+    "result": "FAILED",
+    "attempted_password": "8888",
+    "user": "UNKNOWN",
+    "failed_attempt_number": 53,
+    "ml_risk_level": "HIGH",
+    "ml_risk_confidence": {
+      "HIGH": 0.9405,
+      "LOW": 0.0,
+      "MEDIUM": 0.0595
+    },
+    "agent_risk_level": "HIGH",
+    "escalation_applied": false,
+    "escalation_reason": "No additional escalation was required. The agent accepted the ML assessment.",
+    "security_profile": {
+      "name": "HIGH",
+      "kem": "ML-KEM-1024",
+      "signature": "ML-DSA-87",
+      "description": "Stronger quantum-resistant policy for active attack conditions."
+    },
+    "action": {
+      "action": "LOCK_AUTHENTICATION",
+      "message": "Authentication temporarily locked.",
+      "execution_status": "COMMAND_READY_FOR_DOOR_CONTROLLER"
+    },
+    "observations": [
+      "Repeated authentication failures detected.",
+      "Network anomaly detected.",
+      "Threat indicator is active.",
+      "Elevated communication latency observed.",
+      "High CPU utilization observed.",
+      "High memory utilization observed."
+    ],
+    "reasoning": [
+      "Random Forest initially assessed the environment as HIGH risk.",
+      "ML risk = HIGH; HIGH confidence = 94.05%; MEDIUM confidence = 5.95%.",
+      "Critical security indicators detected: 6.",
+      "No additional escalation was required. The agent accepted the ML assessment."
+    ],
+    "context": {
+      "battery_level": 85,
+      "cpu_utilization": 90,
+      "memory_usage": 87,
+      "failed_auth_attempts": 53,
+      "successful_auth_attempts": 0,
+      "communication_latency_ms": 320,
+      "network_anomaly": 1,
+      "threat_indicator": 1
+    },
+    "event_id": "f0d1c748d1cfa0f8",
+    "timestamp": "2026-09-02T21:11:16+05:30"
+  },
+  {
+    "source": "WEB_UI",
+    "result": "FAILED",
+    "attempted_password": "8882",
+    "user": "UNKNOWN",
+    "failed_attempt_number": 54,
+    "ml_risk_level": "HIGH",
+    "ml_risk_confidence": {
+      "HIGH": 0.9405,
+      "LOW": 0.0,
+      "MEDIUM": 0.0595
+    },
+    "agent_risk_level": "HIGH",
+    "escalation_applied": false,
+    "escalation_reason": "No additional escalation was required. The agent accepted the ML assessment.",
+    "security_profile": {
+      "name": "HIGH",
+      "kem": "ML-KEM-1024",
+      "signature": "ML-DSA-87",
+      "description": "Stronger quantum-resistant policy for active attack conditions."
+    },
+    "action": {
+      "action": "LOCK_AUTHENTICATION",
+      "message": "Authentication temporarily locked.",
+      "execution_status": "COMMAND_READY_FOR_DOOR_CONTROLLER"
+    },
+    "observations": [
+      "Repeated authentication failures detected.",
+      "Network anomaly detected.",
+      "Threat indicator is active.",
+      "Elevated communication latency observed.",
+      "High CPU utilization observed.",
+      "High memory utilization observed."
+    ],
+    "reasoning": [
+      "Random Forest initially assessed the environment as HIGH risk.",
+      "ML risk = HIGH; HIGH confidence = 94.05%; MEDIUM confidence = 5.95%.",
+      "Critical security indicators detected: 6.",
+      "No additional escalation was required. The agent accepted the ML assessment."
+    ],
+    "context": {
+      "battery_level": 85,
+      "cpu_utilization": 90,
+      "memory_usage": 87,
+      "failed_auth_attempts": 54,
+      "successful_auth_attempts": 0,
+      "communication_latency_ms": 320,
+      "network_anomaly": 1,
+      "threat_indicator": 1
+    },
+    "event_id": "77e3623c1e609da6",
+    "timestamp": "2026-09-02T21:11:27+05:30"
+  },
+  {
+    "source": "WEB_UI",
+    "result": "FAILED",
+    "attempted_password": "2222",
+    "user": "UNKNOWN",
+    "failed_attempt_number": 55,
+    "ml_risk_level": "HIGH",
+    "ml_risk_confidence": {
+      "HIGH": 0.9405,
+      "LOW": 0.0,
+      "MEDIUM": 0.0595
+    },
+    "agent_risk_level": "HIGH",
+    "escalation_applied": false,
+    "escalation_reason": "No additional escalation was required. The agent accepted the ML assessment.",
+    "security_profile": {
+      "name": "HIGH",
+      "kem": "ML-KEM-1024",
+      "signature": "ML-DSA-87",
+      "description": "Stronger quantum-resistant policy for active attack conditions."
+    },
+    "action": {
+      "action": "LOCK_AUTHENTICATION",
+      "message": "Authentication temporarily locked.",
+      "execution_status": "COMMAND_READY_FOR_DOOR_CONTROLLER"
+    },
+    "observations": [
+      "Repeated authentication failures detected.",
+      "Network anomaly detected.",
+      "Threat indicator is active.",
+      "Elevated communication latency observed.",
+      "High CPU utilization observed.",
+      "High memory utilization observed."
+    ],
+    "reasoning": [
+      "Random Forest initially assessed the environment as HIGH risk.",
+      "ML risk = HIGH; HIGH confidence = 94.05%; MEDIUM confidence = 5.95%.",
+      "Critical security indicators detected: 6.",
+      "No additional escalation was required. The agent accepted the ML assessment."
+    ],
+    "context": {
+      "battery_level": 85,
+      "cpu_utilization": 90,
+      "memory_usage": 87,
+      "failed_auth_attempts": 55,
+      "successful_auth_attempts": 0,
+      "communication_latency_ms": 320,
+      "network_anomaly": 1,
+      "threat_indicator": 1
+    },
+    "event_id": "b5718563ae0cad5f",
+    "timestamp": "2026-09-02T21:11:28+05:30"
+  },
+  {
+    "source": "WEB_UI",
+    "result": "FAILED",
+    "attempted_password": "2222",
+    "user": "UNKNOWN",
+    "failed_attempt_number": 56,
+    "ml_risk_level": "HIGH",
+    "ml_risk_confidence": {
+      "HIGH": 0.9405,
+      "LOW": 0.0,
+      "MEDIUM": 0.0595
+    },
+    "agent_risk_level": "HIGH",
+    "escalation_applied": false,
+    "escalation_reason": "No additional escalation was required. The agent accepted the ML assessment.",
+    "security_profile": {
+      "name": "HIGH",
+      "kem": "ML-KEM-1024",
+      "signature": "ML-DSA-87",
+      "description": "Stronger quantum-resistant policy for active attack conditions."
+    },
+    "action": {
+      "action": "LOCK_AUTHENTICATION",
+      "message": "Authentication temporarily locked.",
+      "execution_status": "COMMAND_READY_FOR_DOOR_CONTROLLER"
+    },
+    "observations": [
+      "Repeated authentication failures detected.",
+      "Network anomaly detected.",
+      "Threat indicator is active.",
+      "Elevated communication latency observed.",
+      "High CPU utilization observed.",
+      "High memory utilization observed."
+    ],
+    "reasoning": [
+      "Random Forest initially assessed the environment as HIGH risk.",
+      "ML risk = HIGH; HIGH confidence = 94.05%; MEDIUM confidence = 5.95%.",
+      "Critical security indicators detected: 6.",
+      "No additional escalation was required. The agent accepted the ML assessment."
+    ],
+    "context": {
+      "battery_level": 85,
+      "cpu_utilization": 90,
+      "memory_usage": 87,
+      "failed_auth_attempts": 56,
+      "successful_auth_attempts": 0,
+      "communication_latency_ms": 320,
+      "network_anomaly": 1,
+      "threat_indicator": 1
+    },
+    "event_id": "10a0e7e77585ae3d",
+    "timestamp": "2026-09-02T21:11:29+05:30"
+  },
+  {
+    "source": "WEB_UI",
+    "result": "FAILED",
+    "attempted_password": "3333",
+    "user": "UNKNOWN",
+    "failed_attempt_number": 57,
+    "ml_risk_level": "HIGH",
+    "ml_risk_confidence": {
+      "HIGH": 0.9405,
+      "LOW": 0.0,
+      "MEDIUM": 0.0595
+    },
+    "agent_risk_level": "HIGH",
+    "escalation_applied": false,
+    "escalation_reason": "No additional escalation was required. The agent accepted the ML assessment.",
+    "security_profile": {
+      "name": "HIGH",
+      "kem": "ML-KEM-1024",
+      "signature": "ML-DSA-87",
+      "description": "Stronger quantum-resistant policy for active attack conditions."
+    },
+    "action": {
+      "action": "LOCK_AUTHENTICATION",
+      "message": "Authentication temporarily locked.",
+      "execution_status": "COMMAND_READY_FOR_DOOR_CONTROLLER"
+    },
+    "observations": [
+      "Repeated authentication failures detected.",
+      "Network anomaly detected.",
+      "Threat indicator is active.",
+      "Elevated communication latency observed.",
+      "High CPU utilization observed.",
+      "High memory utilization observed."
+    ],
+    "reasoning": [
+      "Random Forest initially assessed the environment as HIGH risk.",
+      "ML risk = HIGH; HIGH confidence = 94.05%; MEDIUM confidence = 5.95%.",
+      "Critical security indicators detected: 6.",
+      "No additional escalation was required. The agent accepted the ML assessment."
+    ],
+    "context": {
+      "battery_level": 85,
+      "cpu_utilization": 90,
+      "memory_usage": 87,
+      "failed_auth_attempts": 57,
+      "successful_auth_attempts": 0,
+      "communication_latency_ms": 320,
+      "network_anomaly": 1,
+      "threat_indicator": 1
+    },
+    "event_id": "cda99e6588949246",
+    "timestamp": "2026-09-02T21:11:38+05:30"
+  },
+  {
+    "source": "WEB_UI",
+    "result": "FAILED",
+    "attempted_password": "3333",
+    "user": "UNKNOWN",
+    "failed_attempt_number": 58,
+    "ml_risk_level": "HIGH",
+    "ml_risk_confidence": {
+      "HIGH": 0.9405,
+      "LOW": 0.0,
+      "MEDIUM": 0.0595
+    },
+    "agent_risk_level": "HIGH",
+    "escalation_applied": false,
+    "escalation_reason": "No additional escalation was required. The agent accepted the ML assessment.",
+    "security_profile": {
+      "name": "HIGH",
+      "kem": "ML-KEM-1024",
+      "signature": "ML-DSA-87",
+      "description": "Stronger quantum-resistant policy for active attack conditions."
+    },
+    "action": {
+      "action": "LOCK_AUTHENTICATION",
+      "message": "Authentication temporarily locked.",
+      "execution_status": "COMMAND_READY_FOR_DOOR_CONTROLLER"
+    },
+    "observations": [
+      "Repeated authentication failures detected.",
+      "Network anomaly detected.",
+      "Threat indicator is active.",
+      "Elevated communication latency observed.",
+      "High CPU utilization observed.",
+      "High memory utilization observed."
+    ],
+    "reasoning": [
+      "Random Forest initially assessed the environment as HIGH risk.",
+      "ML risk = HIGH; HIGH confidence = 94.05%; MEDIUM confidence = 5.95%.",
+      "Critical security indicators detected: 6.",
+      "No additional escalation was required. The agent accepted the ML assessment."
+    ],
+    "context": {
+      "battery_level": 85,
+      "cpu_utilization": 90,
+      "memory_usage": 87,
+      "failed_auth_attempts": 58,
+      "successful_auth_attempts": 0,
+      "communication_latency_ms": 320,
+      "network_anomaly": 1,
+      "threat_indicator": 1
+    },
+    "event_id": "e58a00d8136728a2",
+    "timestamp": "2026-09-02T21:11:39+05:30"
+  },
+  {
+    "source": "WEB_UI",
+    "result": "FAILED",
+    "attempted_password": "3333",
+    "user": "UNKNOWN",
+    "failed_attempt_number": 59,
+    "ml_risk_level": "HIGH",
+    "ml_risk_confidence": {
+      "HIGH": 0.9405,
+      "LOW": 0.0,
+      "MEDIUM": 0.0595
+    },
+    "agent_risk_level": "HIGH",
+    "escalation_applied": false,
+    "escalation_reason": "No additional escalation was required. The agent accepted the ML assessment.",
+    "security_profile": {
+      "name": "HIGH",
+      "kem": "ML-KEM-1024",
+      "signature": "ML-DSA-87",
+      "description": "Stronger quantum-resistant policy for active attack conditions."
+    },
+    "action": {
+      "action": "LOCK_AUTHENTICATION",
+      "message": "Authentication temporarily locked.",
+      "execution_status": "COMMAND_READY_FOR_DOOR_CONTROLLER"
+    },
+    "observations": [
+      "Repeated authentication failures detected.",
+      "Network anomaly detected.",
+      "Threat indicator is active.",
+      "Elevated communication latency observed.",
+      "High CPU utilization observed.",
+      "High memory utilization observed."
+    ],
+    "reasoning": [
+      "Random Forest initially assessed the environment as HIGH risk.",
+      "ML risk = HIGH; HIGH confidence = 94.05%; MEDIUM confidence = 5.95%.",
+      "Critical security indicators detected: 6.",
+      "No additional escalation was required. The agent accepted the ML assessment."
+    ],
+    "context": {
+      "battery_level": 85,
+      "cpu_utilization": 90,
+      "memory_usage": 87,
+      "failed_auth_attempts": 59,
+      "successful_auth_attempts": 0,
+      "communication_latency_ms": 320,
+      "network_anomaly": 1,
+      "threat_indicator": 1
+    },
+    "event_id": "bf4bdbce57941891",
+    "timestamp": "2026-09-02T21:11:41+05:30"
+  },
+  {
+    "source": "WEB_UI",
+    "result": "FAILED",
+    "attempted_password": "3333",
+    "user": "UNKNOWN",
+    "failed_attempt_number": 60,
+    "ml_risk_level": "HIGH",
+    "ml_risk_confidence": {
+      "HIGH": 0.9405,
+      "LOW": 0.0,
+      "MEDIUM": 0.0595
+    },
+    "agent_risk_level": "HIGH",
+    "escalation_applied": false,
+    "escalation_reason": "No additional escalation was required. The agent accepted the ML assessment.",
+    "security_profile": {
+      "name": "HIGH",
+      "kem": "ML-KEM-1024",
+      "signature": "ML-DSA-87",
+      "description": "Stronger quantum-resistant policy for active attack conditions."
+    },
+    "action": {
+      "action": "LOCK_AUTHENTICATION",
+      "message": "Authentication temporarily locked.",
+      "execution_status": "COMMAND_READY_FOR_DOOR_CONTROLLER"
+    },
+    "observations": [
+      "Repeated authentication failures detected.",
+      "Network anomaly detected.",
+      "Threat indicator is active.",
+      "Elevated communication latency observed.",
+      "High CPU utilization observed.",
+      "High memory utilization observed."
+    ],
+    "reasoning": [
+      "Random Forest initially assessed the environment as HIGH risk.",
+      "ML risk = HIGH; HIGH confidence = 94.05%; MEDIUM confidence = 5.95%.",
+      "Critical security indicators detected: 6.",
+      "No additional escalation was required. The agent accepted the ML assessment."
+    ],
+    "context": {
+      "battery_level": 85,
+      "cpu_utilization": 90,
+      "memory_usage": 87,
+      "failed_auth_attempts": 60,
+      "successful_auth_attempts": 0,
+      "communication_latency_ms": 320,
+      "network_anomaly": 1,
+      "threat_indicator": 1
+    },
+    "event_id": "c91180e98d271275",
+    "timestamp": "2026-09-02T21:11:42+05:30"
+  },
+  {
+    "source": "WEB_UI",
+    "result": "FAILED",
+    "attempted_password": "3333",
+    "user": "UNKNOWN",
+    "failed_attempt_number": 61,
+    "ml_risk_level": "HIGH",
+    "ml_risk_confidence": {
+      "HIGH": 0.9405,
+      "LOW": 0.0,
+      "MEDIUM": 0.0595
+    },
+    "agent_risk_level": "HIGH",
+    "escalation_applied": false,
+    "escalation_reason": "No additional escalation was required. The agent accepted the ML assessment.",
+    "security_profile": {
+      "name": "HIGH",
+      "kem": "ML-KEM-1024",
+      "signature": "ML-DSA-87",
+      "description": "Stronger quantum-resistant policy for active attack conditions."
+    },
+    "action": {
+      "action": "LOCK_AUTHENTICATION",
+      "message": "Authentication temporarily locked.",
+      "execution_status": "COMMAND_READY_FOR_DOOR_CONTROLLER"
+    },
+    "observations": [
+      "Repeated authentication failures detected.",
+      "Network anomaly detected.",
+      "Threat indicator is active.",
+      "Elevated communication latency observed.",
+      "High CPU utilization observed.",
+      "High memory utilization observed."
+    ],
+    "reasoning": [
+      "Random Forest initially assessed the environment as HIGH risk.",
+      "ML risk = HIGH; HIGH confidence = 94.05%; MEDIUM confidence = 5.95%.",
+      "Critical security indicators detected: 6.",
+      "No additional escalation was required. The agent accepted the ML assessment."
+    ],
+    "context": {
+      "battery_level": 85,
+      "cpu_utilization": 90,
+      "memory_usage": 87,
+      "failed_auth_attempts": 61,
+      "successful_auth_attempts": 0,
+      "communication_latency_ms": 320,
+      "network_anomaly": 1,
+      "threat_indicator": 1
+    },
+    "event_id": "97cb88a8835f3610",
+    "timestamp": "2026-09-02T21:11:42+05:30"
+  },
+  {
+    "source": "WEB_UI",
+    "result": "FAILED",
+    "attempted_password": "3333",
+    "user": "UNKNOWN",
+    "failed_attempt_number": 62,
+    "ml_risk_level": "HIGH",
+    "ml_risk_confidence": {
+      "HIGH": 0.9405,
+      "LOW": 0.0,
+      "MEDIUM": 0.0595
+    },
+    "agent_risk_level": "HIGH",
+    "escalation_applied": false,
+    "escalation_reason": "No additional escalation was required. The agent accepted the ML assessment.",
+    "security_profile": {
+      "name": "HIGH",
+      "kem": "ML-KEM-1024",
+      "signature": "ML-DSA-87",
+      "description": "Stronger quantum-resistant policy for active attack conditions."
+    },
+    "action": {
+      "action": "LOCK_AUTHENTICATION",
+      "message": "Authentication temporarily locked.",
+      "execution_status": "COMMAND_READY_FOR_DOOR_CONTROLLER"
+    },
+    "observations": [
+      "Repeated authentication failures detected.",
+      "Network anomaly detected.",
+      "Threat indicator is active.",
+      "Elevated communication latency observed.",
+      "High CPU utilization observed.",
+      "High memory utilization observed."
+    ],
+    "reasoning": [
+      "Random Forest initially assessed the environment as HIGH risk.",
+      "ML risk = HIGH; HIGH confidence = 94.05%; MEDIUM confidence = 5.95%.",
+      "Critical security indicators detected: 6.",
+      "No additional escalation was required. The agent accepted the ML assessment."
+    ],
+    "context": {
+      "battery_level": 85,
+      "cpu_utilization": 90,
+      "memory_usage": 87,
+      "failed_auth_attempts": 62,
+      "successful_auth_attempts": 0,
+      "communication_latency_ms": 320,
+      "network_anomaly": 1,
+      "threat_indicator": 1
+    },
+    "event_id": "86df3c5af13e632d",
+    "timestamp": "2026-09-02T21:11:43+05:30"
+  },
+  {
+    "source": "WEB_UI",
+    "result": "SUCCESS",
+    "attempted_password": "1234",
+    "user": "DAD",
+    "ml_risk_level": "LOW",
+    "agent_risk_level": "LOW",
+    "escalation_applied": false,
+    "escalation_reason": "",
+    "security_profile": {
+      "name": "LOW",
+      "kem": "ML-KEM-512",
+      "signature": "ML-DSA-44"
+    },
+    "action": {
+      "action": "OPEN_DOOR",
+      "message": "Authorized authentication accepted. Door opened."
+    },
+    "reason": "Authorized local keyboard authentication.",
+    "event_id": "c3fc5505325ad1b1",
+    "timestamp": "2026-09-02T21:11:50+05:30"
+  },
+  {
+    "source": "WEB_UI",
+    "result": "FAILED",
+    "attempted_password": "1233",
+    "user": "UNKNOWN",
+    "failed_attempt_number": 63,
+    "ml_risk_level": "HIGH",
+    "ml_risk_confidence": {
+      "HIGH": 0.9405,
+      "LOW": 0.0,
+      "MEDIUM": 0.0595
+    },
+    "agent_risk_level": "HIGH",
+    "escalation_applied": false,
+    "escalation_reason": "No additional escalation was required. The agent accepted the ML assessment.",
+    "security_profile": {
+      "name": "HIGH",
+      "kem": "ML-KEM-1024",
+      "signature": "ML-DSA-87",
+      "description": "Stronger quantum-resistant policy for active attack conditions."
+    },
+    "action": {
+      "action": "LOCK_AUTHENTICATION",
+      "message": "Authentication temporarily locked.",
+      "execution_status": "COMMAND_READY_FOR_DOOR_CONTROLLER"
+    },
+    "observations": [
+      "Repeated authentication failures detected.",
+      "Network anomaly detected.",
+      "Threat indicator is active.",
+      "Elevated communication latency observed.",
+      "High CPU utilization observed.",
+      "High memory utilization observed."
+    ],
+    "reasoning": [
+      "Random Forest initially assessed the environment as HIGH risk.",
+      "ML risk = HIGH; HIGH confidence = 94.05%; MEDIUM confidence = 5.95%.",
+      "Critical security indicators detected: 6.",
+      "No additional escalation was required. The agent accepted the ML assessment."
+    ],
+    "context": {
+      "battery_level": 85,
+      "cpu_utilization": 90,
+      "memory_usage": 87,
+      "failed_auth_attempts": 63,
+      "successful_auth_attempts": 0,
+      "communication_latency_ms": 320,
+      "network_anomaly": 1,
+      "threat_indicator": 1
+    },
+    "event_id": "6e81740e9c148951",
+    "timestamp": "2026-09-02T21:12:00+05:30"
+  },
+  {
+    "source": "WEB_UI",
+    "result": "FAILED",
+    "attempted_password": "4555",
+    "user": "UNKNOWN",
+    "failed_attempt_number": 64,
+    "ml_risk_level": "HIGH",
+    "ml_risk_confidence": {
+      "HIGH": 0.9405,
+      "LOW": 0.0,
+      "MEDIUM": 0.0595
+    },
+    "agent_risk_level": "HIGH",
+    "escalation_applied": false,
+    "escalation_reason": "No additional escalation was required. The agent accepted the ML assessment.",
+    "security_profile": {
+      "name": "HIGH",
+      "kem": "ML-KEM-1024",
+      "signature": "ML-DSA-87",
+      "description": "Stronger quantum-resistant policy for active attack conditions."
+    },
+    "action": {
+      "action": "LOCK_AUTHENTICATION",
+      "message": "Authentication temporarily locked.",
+      "execution_status": "COMMAND_READY_FOR_DOOR_CONTROLLER"
+    },
+    "observations": [
+      "Repeated authentication failures detected.",
+      "Network anomaly detected.",
+      "Threat indicator is active.",
+      "Elevated communication latency observed.",
+      "High CPU utilization observed.",
+      "High memory utilization observed."
+    ],
+    "reasoning": [
+      "Random Forest initially assessed the environment as HIGH risk.",
+      "ML risk = HIGH; HIGH confidence = 94.05%; MEDIUM confidence = 5.95%.",
+      "Critical security indicators detected: 6.",
+      "No additional escalation was required. The agent accepted the ML assessment."
+    ],
+    "context": {
+      "battery_level": 85,
+      "cpu_utilization": 90,
+      "memory_usage": 87,
+      "failed_auth_attempts": 64,
+      "successful_auth_attempts": 0,
+      "communication_latency_ms": 320,
+      "network_anomaly": 1,
+      "threat_indicator": 1
+    },
+    "event_id": "4413525de0383d6f",
+    "timestamp": "2026-09-02T21:12:08+05:30"
+  },
+  {
+    "source": "WEB_UI",
+    "result": "FAILED",
+    "attempted_password": "5567",
+    "user": "UNKNOWN",
+    "failed_attempt_number": 65,
+    "ml_risk_level": "HIGH",
+    "ml_risk_confidence": {
+      "HIGH": 0.9405,
+      "LOW": 0.0,
+      "MEDIUM": 0.0595
+    },
+    "agent_risk_level": "HIGH",
+    "escalation_applied": false,
+    "escalation_reason": "No additional escalation was required. The agent accepted the ML assessment.",
+    "security_profile": {
+      "name": "HIGH",
+      "kem": "ML-KEM-1024",
+      "signature": "ML-DSA-87",
+      "description": "Stronger quantum-resistant policy for active attack conditions."
+    },
+    "action": {
+      "action": "LOCK_AUTHENTICATION",
+      "message": "Authentication temporarily locked.",
+      "execution_status": "COMMAND_READY_FOR_DOOR_CONTROLLER"
+    },
+    "observations": [
+      "Repeated authentication failures detected.",
+      "Network anomaly detected.",
+      "Threat indicator is active.",
+      "Elevated communication latency observed.",
+      "High CPU utilization observed.",
+      "High memory utilization observed."
+    ],
+    "reasoning": [
+      "Random Forest initially assessed the environment as HIGH risk.",
+      "ML risk = HIGH; HIGH confidence = 94.05%; MEDIUM confidence = 5.95%.",
+      "Critical security indicators detected: 6.",
+      "No additional escalation was required. The agent accepted the ML assessment."
+    ],
+    "context": {
+      "battery_level": 85,
+      "cpu_utilization": 90,
+      "memory_usage": 87,
+      "failed_auth_attempts": 65,
+      "successful_auth_attempts": 0,
+      "communication_latency_ms": 320,
+      "network_anomaly": 1,
+      "threat_indicator": 1
+    },
+    "event_id": "c130adf75c5e477f",
+    "timestamp": "2026-09-02T21:12:14+05:30"
+  },
+  {
+    "source": "WEB_UI",
+    "result": "FAILED",
+    "attempted_password": "8555",
+    "user": "UNKNOWN",
+    "failed_attempt_number": 66,
+    "ml_risk_level": "HIGH",
+    "ml_risk_confidence": {
+      "HIGH": 0.9405,
+      "LOW": 0.0,
+      "MEDIUM": 0.0595
+    },
+    "agent_risk_level": "HIGH",
+    "escalation_applied": false,
+    "escalation_reason": "No additional escalation was required. The agent accepted the ML assessment.",
+    "security_profile": {
+      "name": "HIGH",
+      "kem": "ML-KEM-1024",
+      "signature": "ML-DSA-87",
+      "description": "Stronger quantum-resistant policy for active attack conditions."
+    },
+    "action": {
+      "action": "LOCK_AUTHENTICATION",
+      "message": "Authentication temporarily locked.",
+      "execution_status": "COMMAND_READY_FOR_DOOR_CONTROLLER"
+    },
+    "observations": [
+      "Repeated authentication failures detected.",
+      "Network anomaly detected.",
+      "Threat indicator is active.",
+      "Elevated communication latency observed.",
+      "High CPU utilization observed.",
+      "High memory utilization observed."
+    ],
+    "reasoning": [
+      "Random Forest initially assessed the environment as HIGH risk.",
+      "ML risk = HIGH; HIGH confidence = 94.05%; MEDIUM confidence = 5.95%.",
+      "Critical security indicators detected: 6.",
+      "No additional escalation was required. The agent accepted the ML assessment."
+    ],
+    "context": {
+      "battery_level": 85,
+      "cpu_utilization": 90,
+      "memory_usage": 87,
+      "failed_auth_attempts": 66,
+      "successful_auth_attempts": 0,
+      "communication_latency_ms": 320,
+      "network_anomaly": 1,
+      "threat_indicator": 1
+    },
+    "event_id": "17aa327b421719ee",
+    "timestamp": "2026-09-02T21:12:20+05:30"
+  },
+  {
+    "source": "WEB_UI",
+    "result": "SUCCESS",
+    "attempted_password": "5678",
+    "user": "MOM",
+    "ml_risk_level": "LOW",
+    "agent_risk_level": "LOW",
+    "escalation_applied": false,
+    "escalation_reason": "",
+    "security_profile": {
+      "name": "LOW",
+      "kem": "ML-KEM-512",
+      "signature": "ML-DSA-44"
+    },
+    "action": {
+      "action": "OPEN_DOOR",
+      "message": "Authorized authentication accepted. Door opened."
+    },
+    "reason": "Authorized local keyboard authentication.",
+    "event_id": "56c968572a432b3e",
+    "timestamp": "2026-09-02T21:12:24+05:30"
+  }
+]
