@@ -1,0 +1,8 @@
+{
+  "name": "Adaptive PQC Smart Door Lock",
+  "description": "Agentic AI autonomous smart door lock with Random Forest risk classification, 8-node LangGraph security agent, and NIST Post-Quantum Cryptography (ML-KEM/ML-DSA).",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

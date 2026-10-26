@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg: #060912;
+    --panel: #0d1424;
+    --panel2: #111a2d;
+    --panel-glass: rgba(13, 20, 36, 0.85);
+    --border: rgba(255, 255, 255, 0.08);
+    --border-glow: rgba(54, 217, 255, 0.35);
+    --text: #edf3ff;
+    --muted: #8190aa;
+    --accent: #6d7cff;
+    --cyan: #36d9ff;
+    --green: #4ade80;
+    --yellow: #facc15;
+    --red: #ff5f73;
+    --purple: #a855f7;
+  }
+
+  body {
+    background-color: var(--bg);
+    background-image: 
+      radial-gradient(circle at 10% 0%, rgba(109, 124, 255, 0.16), transparent 32%),
+      radial-gradient(circle at 90% 15%, rgba(54, 217, 255, 0.12), transparent 30%),
+      radial-gradient(circle at 50% 60%, rgba(168, 85, 247, 0.07), transparent 42%),
+      radial-gradient(circle at 20% 85%, rgba(54, 217, 255, 0.05), transparent 35%);
+    background-attachment: fixed;
+    color: var(--text);
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  code, kbd, samp, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* 3D Door Perspective & Animation */
+.door-perspective {
+  perspective: 1000px;
+}
+
+.door-leaf {
+  transform-style: preserve-3d;
+  transform-origin: left center;
+  transition: transform 1.2s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.6s ease;
+}
+
+.door-leaf.open {
+  transform: rotateY(-80deg);
+  box-shadow: 25px 10px 40px rgba(0, 0, 0, 0.7);
+}
+
+.door-leaf.locked {
+  transform: rotateY(0deg);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Node pulse animation in LangGraph visualizer */
+@keyframes nodePulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(54, 217, 255, 0.7);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 25px 6px rgba(54, 217, 255, 0.9);
+    transform: scale(1.04);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(54, 217, 255, 0);
+    transform: scale(1);
+  }
+}
+
+.node-active {
+  animation: nodePulse 1.2s infinite ease-in-out;
+  border-color: #36d9ff !important;
+  background: rgba(54, 217, 255, 0.18) !important;
+}
+
+/* Keypad tactile press animation */
+.key-press:active {
+  transform: scale(0.92) translateY(2px);
+  filter: brightness(1.2);
+}
+
+/* Glow effects */
+.glow-cyan {
+  box-shadow: 0 0 20px rgba(54, 217, 255, 0.35);
+}
+
+.glow-red {
+  box-shadow: 0 0 20px rgba(255, 95, 115, 0.4);
+}
+
+.glow-green {
+  box-shadow: 0 0 20px rgba(74, 222, 128, 0.4);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(6, 9, 18, 0.8);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(54, 217, 255, 0.4);
+}
